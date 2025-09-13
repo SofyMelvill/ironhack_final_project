@@ -1,0 +1,556 @@
+categoria,produtos_agricolas,unidade,Ano,Preco
+Plantas Industriais,Cana-de-açúcar,Euro/100 kg,2010,25.0
+Vegetais e Produtos Hortícolas,Alface,Euro/100 kg,2010,206.53
+Vegetais e Produtos Hortícolas,Couve repolho,Euro/100 kg,2010,65.01
+Vegetais e Produtos Hortícolas,Tomate ,Euro/100 kg,2010,114.38
+Vegetais e Produtos Hortícolas,Cenoura,Euro/100 kg,2010,117.68
+Vegetais e Produtos Hortícolas,Feijão verde,Euro/100 kg,2010,203.57
+Vegetais e Produtos Hortícolas,Cebola,Euro/100 kg,2010,122.53
+Vegetais e Produtos Hortícolas,Pepino,Euro/100 kg,2010,281.23
+Vegetais e Produtos Hortícolas,Pimento,Euro/100 kg,2010,112.29
+Vegetais e Produtos Hortícolas,Courgette,Euro/100 kg,2010,103.0
+Vegetais e Produtos Hortícolas,Nabo,Euro/100 kg,2010,124.66
+Vegetais e Produtos Hortícolas,Abóbora,Euro/100 kg,2010,122.75
+Vegetais e Produtos Hortícolas,Acelga,Euro/100 kg,2010,103.46
+Vegetais e Produtos Hortícolas,Pimpinela,Euro/100 kg,2010,100.9
+Plantas e flores,Rosa,Euro/100 unid.,2010,60.66
+Plantas e flores,Cravo,Euro/100 unid.,2010,18.9
+Plantas e flores,Gerbera,Euro/100 unid.,2010,42.77
+Plantas e flores,Estrelícia,Euro/100 unid.,2010,34.58
+Plantas e flores,Antúrio,Euro/100 unid.,2010,64.61
+Plantas e flores,Orquídea,Euro/100 unid.,2010,339.39
+Plantas e flores,Protea,Euro/100 unid.,2010,120.8
+Batata de consumo,Batata primor,Euro/100 kg,2010,85.07
+Batata de consumo,Batata de conservação,Euro/100 kg,2010,63.17
+Frutos ,Maçãs,Euro/100 kg,2010,58.6
+Frutos ,Cerejas,Euro/100 kg,2010,250.0
+Frutos ,Tangerinas,Euro/100 kg,2010,128.76
+Frutos ,Limões,Euro/100 kg,2010,77.0
+Frutos ,Banana,Euro/100 kg,2010,13.86
+Frutos ,Abacate,Euro/100 kg,2010,113.83
+Frutos ,Anona,Euro/100 kg,2010,159.28
+Frutos ,Uvas,Euro/100 kg,2010,112.21
+Outros produtos vegetais,Inhame,Euro/100 kg,2010,104.94
+Outros produtos vegetais,Batata-doce,Euro/100 kg,2010,184.05
+Vinhos,Vinho de qualidade (DO),Euro/hl,2010,1190.0
+Produção animal,Ovos,Euro/100 unid.,2010,11.6
+Leite de vaca a teor real,Leite de vaca a teor real,Euro/100 kg,2010,50.0
+Mel,Mel,Euro/100 kg,2010,800.0
+Plantas Industriais,Cana-de-açúcar,Euro/100 kg,2011,26.0
+Vegetais e Produtos Hortícolas,Alface,Euro/100 kg,2011,169.07
+Vegetais e Produtos Hortícolas,Couve repolho,Euro/100 kg,2011,55.76
+Vegetais e Produtos Hortícolas,Tomate ,Euro/100 kg,2011,89.39
+Vegetais e Produtos Hortícolas,Cenoura,Euro/100 kg,2011,99.93
+Vegetais e Produtos Hortícolas,Feijão verde,Euro/100 kg,2011,233.98
+Vegetais e Produtos Hortícolas,Cebola,Euro/100 kg,2011,95.58
+Vegetais e Produtos Hortícolas,Pepino,Euro/100 kg,2011,201.84
+Vegetais e Produtos Hortícolas,Pimento,Euro/100 kg,2011,106.21
+Vegetais e Produtos Hortícolas,Courgette,Euro/100 kg,2011,100.41
+Vegetais e Produtos Hortícolas,Nabo,Euro/100 kg,2011,125.47
+Vegetais e Produtos Hortícolas,Abóbora,Euro/100 kg,2011,109.72
+Vegetais e Produtos Hortícolas,Acelga,Euro/100 kg,2011,108.54
+Vegetais e Produtos Hortícolas,Pimpinela,Euro/100 kg,2011,89.99
+Plantas e flores,Rosa,Euro/100 unid.,2011,47.65
+Plantas e flores,Cravo,Euro/100 unid.,2011,16.47
+Plantas e flores,Gerbera,Euro/100 unid.,2011,39.15
+Plantas e flores,Estrelícia,Euro/100 unid.,2011,31.98
+Plantas e flores,Antúrio,Euro/100 unid.,2011,56.66
+Plantas e flores,Orquídea,Euro/100 unid.,2011,303.29
+Plantas e flores,Protea,Euro/100 unid.,2011,211.22
+Batata de consumo,Batata primor,Euro/100 kg,2011,70.58
+Batata de consumo,Batata de conservação,Euro/100 kg,2011,43.77
+Frutos ,Maçãs,Euro/100 kg,2011,61.1
+Frutos ,Cerejas,Euro/100 kg,2011,171.0
+Frutos ,Tangerinas,Euro/100 kg,2011,177.5
+Frutos ,Limões,Euro/100 kg,2011,69.39
+Frutos ,Banana,Euro/100 kg,2011,14.37
+Frutos ,Abacate,Euro/100 kg,2011,99.77
+Frutos ,Anona,Euro/100 kg,2011,148.23
+Frutos ,Uvas,Euro/100 kg,2011,201.06
+Outros produtos vegetais,Inhame,Euro/100 kg,2011,73.63
+Outros produtos vegetais,Batata-doce,Euro/100 kg,2011,158.24
+Vinhos,Vinho de qualidade (DO),Euro/hl,2011,1196.35
+Produção animal,Ovos,Euro/100 unid.,2011,10.29
+Leite de vaca a teor real,Leite de vaca a teor real,Euro/100 kg,2011,50.0
+Mel,Mel,Euro/100 kg,2011,1000.0
+Plantas Industriais,Cana-de-açúcar,Euro/100 kg,2012,26.0
+Vegetais e Produtos Hortícolas,Alface,Euro/100 kg,2012,171.98
+Vegetais e Produtos Hortícolas,Couve repolho,Euro/100 kg,2012,49.15
+Vegetais e Produtos Hortícolas,Tomate ,Euro/100 kg,2012,102.75
+Vegetais e Produtos Hortícolas,Cenoura,Euro/100 kg,2012,97.11
+Vegetais e Produtos Hortícolas,Feijão verde,Euro/100 kg,2012,281.34
+Vegetais e Produtos Hortícolas,Cebola,Euro/100 kg,2012,79.27
+Vegetais e Produtos Hortícolas,Pepino,Euro/100 kg,2012,123.65
+Vegetais e Produtos Hortícolas,Pimento,Euro/100 kg,2012,127.22
+Vegetais e Produtos Hortícolas,Courgette,Euro/100 kg,2012,90.32
+Vegetais e Produtos Hortícolas,Nabo,Euro/100 kg,2012,101.31
+Vegetais e Produtos Hortícolas,Abóbora,Euro/100 kg,2012,118.66
+Vegetais e Produtos Hortícolas,Acelga,Euro/100 kg,2012,90.91
+Vegetais e Produtos Hortícolas,Pimpinela,Euro/100 kg,2012,93.59
+Plantas e flores,Rosa,Euro/100 unid.,2012,53.18
+Plantas e flores,Cravo,Euro/100 unid.,2012,18.15
+Plantas e flores,Gerbera,Euro/100 unid.,2012,31.54
+Plantas e flores,Estrelícia,Euro/100 unid.,2012,31.87
+Plantas e flores,Antúrio,Euro/100 unid.,2012,56.26
+Plantas e flores,Orquídea,Euro/100 unid.,2012,305.63
+Plantas e flores,Protea,Euro/100 unid.,2012,157.0
+Batata de consumo,Batata primor,Euro/100 kg,2012,48.07
+Batata de consumo,Batata de conservação,Euro/100 kg,2012,41.26
+Frutos ,Maçãs,Euro/100 kg,2012,61.1
+Frutos ,Cerejas,Euro/100 kg,2012,145.0
+Frutos ,Tangerinas,Euro/100 kg,2012,158.5
+Frutos ,Limões,Euro/100 kg,2012,75.02
+Frutos ,Banana,Euro/100 kg,2012,13.73
+Frutos ,Abacate,Euro/100 kg,2012,62.95
+Frutos ,Anona,Euro/100 kg,2012,113.83
+Frutos ,Uvas,Euro/100 kg,2012,186.62
+Outros produtos vegetais,Inhame,Euro/100 kg,2012,80.6
+Outros produtos vegetais,Batata-doce,Euro/100 kg,2012,157.47
+Vinhos,Vinho de qualidade (DO),Euro/hl,2012,1196.35
+Produção animal,Ovos,Euro/100 unid.,2012,11.41
+Leite de vaca a teor real,Leite de vaca a teor real,Euro/100 kg,2012,50.44
+Mel,Mel,Euro/100 kg,2012,1000.0
+Plantas Industriais,Cana-de-açúcar,Euro/100 kg,2013,27.0
+Vegetais e Produtos Hortícolas,Alface,Euro/100 kg,2013,114.42
+Vegetais e Produtos Hortícolas,Couve repolho,Euro/100 kg,2013,58.7
+Vegetais e Produtos Hortícolas,Tomate ,Euro/100 kg,2013,90.88
+Vegetais e Produtos Hortícolas,Cenoura,Euro/100 kg,2013,57.03
+Vegetais e Produtos Hortícolas,Feijão verde,Euro/100 kg,2013,156.61
+Vegetais e Produtos Hortícolas,Cebola,Euro/100 kg,2013,69.28
+Vegetais e Produtos Hortícolas,Pepino,Euro/100 kg,2013,71.33
+Vegetais e Produtos Hortícolas,Pimento,Euro/100 kg,2013,119.49
+Vegetais e Produtos Hortícolas,Courgette,Euro/100 kg,2013,81.51
+Vegetais e Produtos Hortícolas,Nabo,Euro/100 kg,2013,99.62
+Vegetais e Produtos Hortícolas,Abóbora,Euro/100 kg,2013,88.94
+Vegetais e Produtos Hortícolas,Acelga,Euro/100 kg,2013,64.19
+Vegetais e Produtos Hortícolas,Pimpinela,Euro/100 kg,2013,93.51
+Plantas e flores,Rosa,Euro/100 unid.,2013,50.13
+Plantas e flores,Cravo,Euro/100 unid.,2013,19.98
+Plantas e flores,Gerbera,Euro/100 unid.,2013,31.5
+Plantas e flores,Estrelícia,Euro/100 unid.,2013,33.03
+Plantas e flores,Antúrio,Euro/100 unid.,2013,71.75
+Plantas e flores,Orquídea,Euro/100 unid.,2013,364.24
+Plantas e flores,Protea,Euro/100 unid.,2013,164.36
+Batata de consumo,Batata primor,Euro/100 kg,2013,58.13
+Batata de consumo,Batata de conservação,Euro/100 kg,2013,43.15
+Frutos ,Maçãs,Euro/100 kg,2013,125.0
+Frutos ,Cerejas,Euro/100 kg,2013,145.0
+Frutos ,Tangerinas,Euro/100 kg,2013,245.0
+Frutos ,Limões,Euro/100 kg,2013,61.68
+Frutos ,Banana,Euro/100 kg,2013,15.45
+Frutos ,Abacate,Euro/100 kg,2013,71.9
+Frutos ,Anona,Euro/100 kg,2013,118.73
+Frutos ,Uvas,Euro/100 kg,2013,157.79
+Outros produtos vegetais,Inhame,Euro/100 kg,2013,79.2
+Outros produtos vegetais,Batata-doce,Euro/100 kg,2013,92.53
+Vinhos,Vinho de qualidade (DO),Euro/hl,2013,1108.5
+Produção animal,Ovos,Euro/100 unid.,2013,11.63
+Leite de vaca a teor real,Leite de vaca a teor real,Euro/100 kg,2013,51.0
+Mel,Mel,Euro/100 kg,2013,1000.0
+Plantas Industriais,Cana-de-açúcar,Euro/100 kg,2014,27.0
+Vegetais e Produtos Hortícolas,Alface,Euro/100 kg,2014,103.99
+Vegetais e Produtos Hortícolas,Couve repolho,Euro/100 kg,2014,54.61
+Vegetais e Produtos Hortícolas,Tomate ,Euro/100 kg,2014,90.54
+Vegetais e Produtos Hortícolas,Cenoura,Euro/100 kg,2014,47.52
+Vegetais e Produtos Hortícolas,Feijão verde,Euro/100 kg,2014,148.35
+Vegetais e Produtos Hortícolas,Cebola,Euro/100 kg,2014,60.09
+Vegetais e Produtos Hortícolas,Pepino,Euro/100 kg,2014,65.38
+Vegetais e Produtos Hortícolas,Pimento,Euro/100 kg,2014,104.42
+Vegetais e Produtos Hortícolas,Courgette,Euro/100 kg,2014,89.09
+Vegetais e Produtos Hortícolas,Nabo,Euro/100 kg,2014,92.11
+Vegetais e Produtos Hortícolas,Abóbora,Euro/100 kg,2014,80.38
+Vegetais e Produtos Hortícolas,Acelga,Euro/100 kg,2014,61.11
+Vegetais e Produtos Hortícolas,Pimpinela,Euro/100 kg,2014,74.07
+Plantas e flores,Rosa,Euro/100 unid.,2014,34.47
+Plantas e flores,Cravo,Euro/100 unid.,2014,20.35
+Plantas e flores,Gerbera,Euro/100 unid.,2014,26.7
+Plantas e flores,Estrelícia,Euro/100 unid.,2014,28.22
+Plantas e flores,Antúrio,Euro/100 unid.,2014,72.85
+Plantas e flores,Orquídea,Euro/100 unid.,2014,71.53
+Plantas e flores,Protea,Euro/100 unid.,2014,115.18
+Batata de consumo,Batata primor,Euro/100 kg,2014,40.57
+Batata de consumo,Batata de conservação,Euro/100 kg,2014,25.99
+Frutos ,Maçãs,Euro/100 kg,2014,60.0
+Frutos ,Cerejas,Euro/100 kg,2014,142.0
+Frutos ,Tangerinas,Euro/100 kg,2014,209.0
+Frutos ,Limões,Euro/100 kg,2014,68.72
+Frutos ,Banana,Euro/100 kg,2014,16.53
+Frutos ,Abacate,Euro/100 kg,2014,89.41
+Frutos ,Anona,Euro/100 kg,2014,119.13
+Frutos ,Uvas,Euro/100 kg,2014,89.93
+Outros produtos vegetais,Inhame,Euro/100 kg,2014,76.6
+Outros produtos vegetais,Batata-doce,Euro/100 kg,2014,98.15
+Vinhos,Vinho de qualidade (DO),Euro/hl,2014,1003.75
+Produção animal,Ovos,Euro/100 unid.,2014,8.76
+Leite de vaca a teor real,Leite de vaca a teor real,Euro/100 kg,2014,50.76
+Mel,Mel,Euro/100 kg,2014,1000.0
+Plantas Industriais,Cana-de-açúcar,Euro/100 kg,2015,27.0
+Vegetais e Produtos Hortícolas,Alface,Euro/100 kg,2015,105.79
+Vegetais e Produtos Hortícolas,Couve repolho,Euro/100 kg,2015,53.4
+Vegetais e Produtos Hortícolas,Tomate ,Euro/100 kg,2015,83.06
+Vegetais e Produtos Hortícolas,Cenoura,Euro/100 kg,2015,84.56
+Vegetais e Produtos Hortícolas,Feijão verde,Euro/100 kg,2015,136.9
+Vegetais e Produtos Hortícolas,Cebola,Euro/100 kg,2015,60.15
+Vegetais e Produtos Hortícolas,Pepino,Euro/100 kg,2015,64.41
+Vegetais e Produtos Hortícolas,Pimento,Euro/100 kg,2015,110.88
+Vegetais e Produtos Hortícolas,Courgette,Euro/100 kg,2015,73.91
+Vegetais e Produtos Hortícolas,Nabo,Euro/100 kg,2015,96.1
+Vegetais e Produtos Hortícolas,Abóbora,Euro/100 kg,2015,86.95
+Vegetais e Produtos Hortícolas,Acelga,Euro/100 kg,2015,59.05
+Vegetais e Produtos Hortícolas,Pimpinela,Euro/100 kg,2015,87.53
+Plantas e flores,Rosa,Euro/100 unid.,2015,37.08
+Plantas e flores,Cravo,Euro/100 unid.,2015,16.94
+Plantas e flores,Gerbera,Euro/100 unid.,2015,26.08
+Plantas e flores,Estrelícia,Euro/100 unid.,2015,29.95
+Plantas e flores,Antúrio,Euro/100 unid.,2015,72.85
+Plantas e flores,Orquídea,Euro/100 unid.,2015,90.72
+Plantas e flores,Protea,Euro/100 unid.,2015,140.35
+Batata de consumo,Batata primor,Euro/100 kg,2015,44.84
+Batata de consumo,Batata de conservação,Euro/100 kg,2015,39.42
+Frutos ,Maçãs,Euro/100 kg,2015,117.8
+Frutos ,Cerejas,Euro/100 kg,2015,152.0
+Frutos ,Tangerinas,Euro/100 kg,2015,211.5
+Frutos ,Limões,Euro/100 kg,2015,81.47
+Frutos ,Banana,Euro/100 kg,2015,17.18
+Frutos ,Abacate,Euro/100 kg,2015,88.97
+Frutos ,Anona,Euro/100 kg,2015,105.62
+Frutos ,Uvas,Euro/100 kg,2015,103.06
+Outros produtos vegetais,Inhame,Euro/100 kg,2015,73.3
+Outros produtos vegetais,Batata-doce,Euro/100 kg,2015,101.58
+Vinhos,Vinho de qualidade (DO),Euro/hl,2015,1282.5
+Produção animal,Ovos,Euro/100 unid.,2015,8.76
+Leite de vaca a teor real,Leite de vaca a teor real,Euro/100 kg,2015,51.0
+Mel,Mel,Euro/100 kg,2015,1000.0
+Plantas Industriais,Cana-de-açúcar,Euro/100 kg,2016,27.0
+Vegetais e Produtos Hortícolas,Alface,Euro/100 kg,2016,132.13
+Vegetais e Produtos Hortícolas,Couve repolho,Euro/100 kg,2016,51.79
+Vegetais e Produtos Hortícolas,Tomate ,Euro/100 kg,2016,101.25
+Vegetais e Produtos Hortícolas,Cenoura,Euro/100 kg,2016,54.56
+Vegetais e Produtos Hortícolas,Feijão verde,Euro/100 kg,2016,145.19
+Vegetais e Produtos Hortícolas,Cebola,Euro/100 kg,2016,73.98
+Vegetais e Produtos Hortícolas,Pepino,Euro/100 kg,2016,78.43
+Vegetais e Produtos Hortícolas,Pimento,Euro/100 kg,2016,110.09
+Vegetais e Produtos Hortícolas,Courgette,Euro/100 kg,2016,88.77
+Vegetais e Produtos Hortícolas,Nabo,Euro/100 kg,2016,120.0
+Vegetais e Produtos Hortícolas,Abóbora,Euro/100 kg,2016,106.69
+Vegetais e Produtos Hortícolas,Acelga,Euro/100 kg,2016,62.57
+Vegetais e Produtos Hortícolas,Pimpinela,Euro/100 kg,2016,127.96
+Plantas e flores,Rosa,Euro/100 unid.,2016,38.61
+Plantas e flores,Cravo,Euro/100 unid.,2016,16.14
+Plantas e flores,Gerbera,Euro/100 unid.,2016,28.82
+Plantas e flores,Estrelícia,Euro/100 unid.,2016,29.29
+Plantas e flores,Antúrio,Euro/100 unid.,2016,74.75
+Plantas e flores,Orquídea,Euro/100 unid.,2016,77.25
+Plantas e flores,Protea,Euro/100 unid.,2016,109.3
+Batata de consumo,Batata primor,Euro/100 kg,2016,62.22
+Batata de consumo,Batata de conservação,Euro/100 kg,2016,49.92
+Frutos ,Maçãs,Euro/100 kg,2016,141.0
+Frutos ,Cerejas,Euro/100 kg,2016,156.0
+Frutos ,Tangerinas,Euro/100 kg,2016,215.0
+Frutos ,Limões,Euro/100 kg,2016,82.21
+Frutos ,Banana,Euro/100 kg,2016,24.58
+Frutos ,Abacate,Euro/100 kg,2016,111.31
+Frutos ,Anona,Euro/100 kg,2016,124.5
+Frutos ,Uvas,Euro/100 kg,2016,108.3
+Outros produtos vegetais,Inhame,Euro/100 kg,2016,93.0
+Outros produtos vegetais,Batata-doce,Euro/100 kg,2016,129.46
+Vinhos,Vinho de qualidade (DO),Euro/hl,2016,1081.75
+Produção animal,Ovos,Euro/100 unid.,2016,10.28
+Leite de vaca a teor real,Leite de vaca a teor real,Euro/100 kg,2016,51.0
+Mel,Mel,Euro/100 kg,2016,1000.0
+Plantas Industriais,Cana-de-açúcar,Euro/100 kg,2017,27.0
+Vegetais e Produtos Hortícolas,Alface,Euro/100 kg,2017,109.38
+Vegetais e Produtos Hortícolas,Couve repolho,Euro/100 kg,2017,58.04
+Vegetais e Produtos Hortícolas,Tomate ,Euro/100 kg,2017,90.37
+Vegetais e Produtos Hortícolas,Cenoura,Euro/100 kg,2017,59.81
+Vegetais e Produtos Hortícolas,Feijão verde,Euro/100 kg,2017,160.03
+Vegetais e Produtos Hortícolas,Cebola,Euro/100 kg,2017,60.4
+Vegetais e Produtos Hortícolas,Pepino,Euro/100 kg,2017,76.27
+Vegetais e Produtos Hortícolas,Pimento,Euro/100 kg,2017,84.56
+Vegetais e Produtos Hortícolas,Courgette,Euro/100 kg,2017,75.36
+Vegetais e Produtos Hortícolas,Nabo,Euro/100 kg,2017,101.11
+Vegetais e Produtos Hortícolas,Abóbora,Euro/100 kg,2017,97.9
+Vegetais e Produtos Hortícolas,Acelga,Euro/100 kg,2017,58.43
+Vegetais e Produtos Hortícolas,Pimpinela,Euro/100 kg,2017,99.94
+Plantas e flores,Rosa,Euro/100 unid.,2017,42.48
+Plantas e flores,Cravo,Euro/100 unid.,2017,18.06
+Plantas e flores,Gerbera,Euro/100 unid.,2017,32.38
+Plantas e flores,Estrelícia,Euro/100 unid.,2017,30.0
+Plantas e flores,Antúrio,Euro/100 unid.,2017,69.15
+Plantas e flores,Orquídea,Euro/100 unid.,2017,46.09
+Plantas e flores,Protea,Euro/100 unid.,2017,123.22
+Batata de consumo,Batata primor,Euro/100 kg,2017,53.19
+Batata de consumo,Batata de conservação,Euro/100 kg,2017,41.08
+Frutos ,Maçãs,Euro/100 kg,2017,163.0
+Frutos ,Cerejas,Euro/100 kg,2017,190.0
+Frutos ,Tangerinas,Euro/100 kg,2017,145.0
+Frutos ,Limões,Euro/100 kg,2017,97.83
+Frutos ,Banana,Euro/100 kg,2017,22.58
+Frutos ,Abacate,Euro/100 kg,2017,125.44
+Frutos ,Anona,Euro/100 kg,2017,108.92
+Frutos ,Uvas,Euro/100 kg,2017,100.35
+Outros produtos vegetais,Inhame,Euro/100 kg,2017,115.8
+Outros produtos vegetais,Batata-doce,Euro/100 kg,2017,113.33
+Vinhos,Vinho de qualidade (DO),Euro/hl,2017,1081.75
+Produção animal,Ovos,Euro/100 unid.,2017,10.28
+Leite de vaca a teor real,Leite de vaca a teor real,Euro/100 kg,2017,51.0
+Mel,Mel,Euro/100 kg,2017,1000.0
+Plantas Industriais,Cana-de-açúcar,Euro/100 kg,2018,27.0
+Vegetais e Produtos Hortícolas,Alface,Euro/100 kg,2018,113.27
+Vegetais e Produtos Hortícolas,Couve repolho,Euro/100 kg,2018,48.12
+Vegetais e Produtos Hortícolas,Tomate ,Euro/100 kg,2018,94.2
+Vegetais e Produtos Hortícolas,Cenoura,Euro/100 kg,2018,56.32
+Vegetais e Produtos Hortícolas,Feijão verde,Euro/100 kg,2018,173.0
+Vegetais e Produtos Hortícolas,Cebola,Euro/100 kg,2018,71.48
+Vegetais e Produtos Hortícolas,Pepino,Euro/100 kg,2018,81.03
+Vegetais e Produtos Hortícolas,Pimento,Euro/100 kg,2018,131.8
+Vegetais e Produtos Hortícolas,Courgette,Euro/100 kg,2018,106.47
+Vegetais e Produtos Hortícolas,Nabo,Euro/100 kg,2018,91.71
+Vegetais e Produtos Hortícolas,Abóbora,Euro/100 kg,2018,121.04
+Vegetais e Produtos Hortícolas,Acelga,Euro/100 kg,2018,69.67
+Vegetais e Produtos Hortícolas,Pimpinela,Euro/100 kg,2018,105.71
+Plantas e flores,Rosa,Euro/100 unid.,2018,39.29
+Plantas e flores,Cravo,Euro/100 unid.,2018,19.41
+Plantas e flores,Gerbera,Euro/100 unid.,2018,32.04
+Plantas e flores,Estrelícia,Euro/100 unid.,2018,30.0
+Plantas e flores,Antúrio,Euro/100 unid.,2018,70.19
+Plantas e flores,Orquídea,Euro/100 unid.,2018,68.09
+Plantas e flores,Protea,Euro/100 unid.,2018,213.9
+Batata de consumo,Batata primor,Euro/100 kg,2018,63.09
+Batata de consumo,Batata de conservação,Euro/100 kg,2018,47.54
+Frutos ,Maçãs,Euro/100 kg,2018,131.9
+Frutos ,Cerejas,Euro/100 kg,2018,200.0
+Frutos ,Tangerinas,Euro/100 kg,2018,165.5
+Frutos ,Limões,Euro/100 kg,2018,96.29
+Frutos ,Banana,Euro/100 kg,2018,24.67
+Frutos ,Abacate,Euro/100 kg,2018,130.68
+Frutos ,Anona,Euro/100 kg,2018,139.85
+Frutos ,Uvas,Euro/100 kg,2018,102.0
+Outros produtos vegetais,Inhame,Euro/100 kg,2018,70.25
+Outros produtos vegetais,Batata-doce,Euro/100 kg,2018,86.46
+Vinhos,Vinho de qualidade (DO),Euro/hl,2018,1166.91
+Produção animal,Ovos,Euro/100 unid.,2018,12.35
+Leite de vaca a teor real,Leite de vaca a teor real,Euro/100 kg,2018,51.0
+Mel,Mel,Euro/100 kg,2018,1000.0
+Plantas Industriais,Cana-de-açúcar,Euro/100 kg,2019,28.0
+Vegetais e Produtos Hortícolas,Alface,Euro/100 kg,2019,95.87
+Vegetais e Produtos Hortícolas,Couve repolho,Euro/100 kg,2019,53.95
+Vegetais e Produtos Hortícolas,Tomate ,Euro/100 kg,2019,93.15
+Vegetais e Produtos Hortícolas,Cenoura,Euro/100 kg,2019,81.82
+Vegetais e Produtos Hortícolas,Feijão verde,Euro/100 kg,2019,217.18
+Vegetais e Produtos Hortícolas,Cebola,Euro/100 kg,2019,90.45
+Vegetais e Produtos Hortícolas,Pepino,Euro/100 kg,2019,82.3
+Vegetais e Produtos Hortícolas,Pimento,Euro/100 kg,2019,101.97
+Vegetais e Produtos Hortícolas,Courgette,Euro/100 kg,2019,84.45
+Vegetais e Produtos Hortícolas,Nabo,Euro/100 kg,2019,99.36
+Vegetais e Produtos Hortícolas,Abóbora,Euro/100 kg,2019,116.94
+Vegetais e Produtos Hortícolas,Acelga,Euro/100 kg,2019,62.0
+Vegetais e Produtos Hortícolas,Pimpinela,Euro/100 kg,2019,81.63
+Plantas e flores,Rosa,Euro/100 unid.,2019,43.29
+Plantas e flores,Cravo,Euro/100 unid.,2019,19.06
+Plantas e flores,Gerbera,Euro/100 unid.,2019,29.28
+Plantas e flores,Estrelícia,Euro/100 unid.,2019,30.78
+Plantas e flores,Antúrio,Euro/100 unid.,2019,75.0
+Plantas e flores,Orquídea,Euro/100 unid.,2019,59.91
+Plantas e flores,Protea,Euro/100 unid.,2019,203.1
+Batata de consumo,Batata primor,Euro/100 kg,2019,55.31
+Batata de consumo,Batata de conservação,Euro/100 kg,2019,48.71
+Frutos ,Maçãs,Euro/100 kg,2019,104.6
+Frutos ,Cerejas,Euro/100 kg,2019,201.0
+Frutos ,Tangerinas,Euro/100 kg,2019,169.0
+Frutos ,Limões,Euro/100 kg,2019,90.12
+Frutos ,Banana,Euro/100 kg,2019,24.67
+Frutos ,Abacate,Euro/100 kg,2019,186.16
+Frutos ,Anona,Euro/100 kg,2019,205.19
+Frutos ,Uvas,Euro/100 kg,2019,108.39
+Outros produtos vegetais,Inhame,Euro/100 kg,2019,83.95
+Outros produtos vegetais,Batata-doce,Euro/100 kg,2019,91.08
+Vinhos,Vinho de qualidade (DO),Euro/hl,2019,1114.56
+Produção animal,Ovos,Euro/100 unid.,2019,11.91
+Leite de vaca a teor real,Leite de vaca a teor real,Euro/100 kg,2019,51.0
+Mel,Mel,Euro/100 kg,2019,900.0
+Plantas Industriais,Cana-de-açúcar,Euro/100 kg,2020,28.0
+Vegetais e Produtos Hortícolas,Alface,Euro/100 kg,2020,98.69
+Vegetais e Produtos Hortícolas,Couve repolho,Euro/100 kg,2020,49.51
+Vegetais e Produtos Hortícolas,Tomate ,Euro/100 kg,2020,92.53
+Vegetais e Produtos Hortícolas,Cenoura,Euro/100 kg,2020,66.72
+Vegetais e Produtos Hortícolas,Feijão verde,Euro/100 kg,2020,177.86
+Vegetais e Produtos Hortícolas,Cebola,Euro/100 kg,2020,115.03
+Vegetais e Produtos Hortícolas,Pepino,Euro/100 kg,2020,84.07
+Vegetais e Produtos Hortícolas,Pimento,Euro/100 kg,2020,146.65
+Vegetais e Produtos Hortícolas,Courgette,Euro/100 kg,2020,80.19
+Vegetais e Produtos Hortícolas,Nabo,Euro/100 kg,2020,92.13
+Vegetais e Produtos Hortícolas,Abóbora,Euro/100 kg,2020,97.51
+Vegetais e Produtos Hortícolas,Acelga,Euro/100 kg,2020,74.64
+Vegetais e Produtos Hortícolas,Pimpinela,Euro/100 kg,2020,95.82
+Plantas e flores,Rosa,Euro/100 unid.,2020,43.28
+Plantas e flores,Cravo,Euro/100 unid.,2020,18.07
+Plantas e flores,Gerbera,Euro/100 unid.,2020,25.35
+Plantas e flores,Estrelícia,Euro/100 unid.,2020,30.0
+Plantas e flores,Antúrio,Euro/100 unid.,2020,75.0
+Plantas e flores,Orquídea,Euro/100 unid.,2020,59.25
+Plantas e flores,Protea,Euro/100 unid.,2020,153.6
+Batata de consumo,Batata primor,Euro/100 kg,2020,
+Batata de consumo,Batata de conservação,Euro/100 kg,2020,44.66
+Frutos ,Maçãs,Euro/100 kg,2020,182.2
+Frutos ,Cerejas,Euro/100 kg,2020,332.21
+Frutos ,Tangerinas,Euro/100 kg,2020,169.0
+Frutos ,Limões,Euro/100 kg,2020,88.97
+Frutos ,Banana,Euro/100 kg,2020,25.65
+Frutos ,Abacate,Euro/100 kg,2020,145.61
+Frutos ,Anona,Euro/100 kg,2020,179.79
+Frutos ,Uvas,Euro/100 kg,2020,114.17
+Outros produtos vegetais,Inhame,Euro/100 kg,2020,109.0
+Outros produtos vegetais,Batata-doce,Euro/100 kg,2020,78.27
+Vinhos,Vinho de qualidade (DO),Euro/hl,2020,1047.0
+Produção animal,Ovos,Euro/100 unid.,2020,11.84
+Leite de vaca a teor real,Leite de vaca a teor real,Euro/100 kg,2020,50.76
+Mel,Mel,Euro/100 kg,2020,600.0
+Plantas Industriais,Cana-de-açúcar,Euro/100 kg,2021,28.0
+Vegetais e Produtos Hortícolas,Alface,Euro/100 kg,2021,114.05
+Vegetais e Produtos Hortícolas,Couve repolho,Euro/100 kg,2021,59.23
+Vegetais e Produtos Hortícolas,Tomate ,Euro/100 kg,2021,114.63
+Vegetais e Produtos Hortícolas,Cenoura,Euro/100 kg,2021,136.81
+Vegetais e Produtos Hortícolas,Feijão verde,Euro/100 kg,2021,181.74
+Vegetais e Produtos Hortícolas,Cebola,Euro/100 kg,2021,128.6
+Vegetais e Produtos Hortícolas,Pepino,Euro/100 kg,2021,104.06
+Vegetais e Produtos Hortícolas,Pimento,Euro/100 kg,2021,178.19
+Vegetais e Produtos Hortícolas,Courgette,Euro/100 kg,2021,71.92
+Vegetais e Produtos Hortícolas,Nabo,Euro/100 kg,2021,99.09
+Vegetais e Produtos Hortícolas,Abóbora,Euro/100 kg,2021,107.54
+Vegetais e Produtos Hortícolas,Acelga,Euro/100 kg,2021,74.19
+Vegetais e Produtos Hortícolas,Pimpinela,Euro/100 kg,2021,122.25
+Plantas e flores,Rosa,Euro/100 unid.,2021,43.4
+Plantas e flores,Cravo,Euro/100 unid.,2021,18.0
+Plantas e flores,Gerbera,Euro/100 unid.,2021,24.6
+Plantas e flores,Estrelícia,Euro/100 unid.,2021,25.14
+Plantas e flores,Antúrio,Euro/100 unid.,2021,65.0
+Plantas e flores,Orquídea,Euro/100 unid.,2021,46.5
+Plantas e flores,Protea,Euro/100 unid.,2021,148.67
+Batata de consumo,Batata primor,Euro/100 kg,2021,45.28
+Batata de consumo,Batata de conservação,Euro/100 kg,2021,52.38
+Frutos ,Maçãs,Euro/100 kg,2021,164.2
+Frutos ,Cerejas,Euro/100 kg,2021,257.0
+Frutos ,Tangerinas,Euro/100 kg,2021,173.0
+Frutos ,Limões,Euro/100 kg,2021,75.68
+Frutos ,Banana,Euro/100 kg,2021,24.67
+Frutos ,Abacate,Euro/100 kg,2021,199.55
+Frutos ,Anona,Euro/100 kg,2021,219.47
+Frutos ,Uvas,Euro/100 kg,2021,124.97
+Outros produtos vegetais,Inhame,Euro/100 kg,2021,100.8
+Outros produtos vegetais,Batata-doce,Euro/100 kg,2021,94.2
+Vinhos,Vinho de qualidade (DO),Euro/hl,2021,1059.75
+Produção animal,Ovos,Euro/100 unid.,2021,11.3
+Leite de vaca a teor real,Leite de vaca a teor real,Euro/100 kg,2021,50.83
+Mel,Mel,Euro/100 kg,2021,600.0
+Plantas Industriais,Cana-de-açúcar,Euro/100 kg,2022,29.8
+Vegetais e Produtos Hortícolas,Alface,Euro/100 kg,2022,129.29
+Vegetais e Produtos Hortícolas,Couve repolho,Euro/100 kg,2022,61.72
+Vegetais e Produtos Hortícolas,Tomate ,Euro/100 kg,2022,134.14
+Vegetais e Produtos Hortícolas,Cenoura,Euro/100 kg,2022,100.55
+Vegetais e Produtos Hortícolas,Feijão verde,Euro/100 kg,2022,190.27
+Vegetais e Produtos Hortícolas,Cebola,Euro/100 kg,2022,125.49
+Vegetais e Produtos Hortícolas,Pepino,Euro/100 kg,2022,115.25
+Vegetais e Produtos Hortícolas,Pimento,Euro/100 kg,2022,176.39
+Vegetais e Produtos Hortícolas,Courgette,Euro/100 kg,2022,111.9
+Vegetais e Produtos Hortícolas,Nabo,Euro/100 kg,2022,111.41
+Vegetais e Produtos Hortícolas,Abóbora,Euro/100 kg,2022,122.38
+Vegetais e Produtos Hortícolas,Acelga,Euro/100 kg,2022,64.19
+Vegetais e Produtos Hortícolas,Pimpinela,Euro/100 kg,2022,116.92
+Plantas e flores,Rosa,Euro/100 unid.,2022,44.0
+Plantas e flores,Cravo,Euro/100 unid.,2022,18.0
+Plantas e flores,Gerbera,Euro/100 unid.,2022,24.0
+Plantas e flores,Estrelícia,Euro/100 unid.,2022,25.0
+Plantas e flores,Antúrio,Euro/100 unid.,2022,65.0
+Plantas e flores,Orquídea,Euro/100 unid.,2022,44.72
+Plantas e flores,Protea,Euro/100 unid.,2022,148.67
+Batata de consumo,Batata primor,Euro/100 kg,2022,63.61
+Batata de consumo,Batata de conservação,Euro/100 kg,2022,63.14
+Frutos ,Maçãs,Euro/100 kg,2022,164.2
+Frutos ,Cerejas,Euro/100 kg,2022,293.57
+Frutos ,Tangerinas,Euro/100 kg,2022,163.51
+Frutos ,Limões,Euro/100 kg,2022,87.27
+Frutos ,Banana,Euro/100 kg,2022,24.67
+Frutos ,Abacate,Euro/100 kg,2022,195.22
+Frutos ,Anona,Euro/100 kg,2022,198.42
+Frutos ,Uvas,Euro/100 kg,2022,111.88
+Outros produtos vegetais,Inhame,Euro/100 kg,2022,101.2
+Outros produtos vegetais,Batata-doce,Euro/100 kg,2022,131.39
+Vinhos,Vinho de qualidade (DO),Euro/hl,2022,1101.5
+Produção animal,Ovos,Euro/100 unid.,2022,15.77
+Leite de vaca a teor real,Leite de vaca a teor real,Euro/100 kg,2022,51.0
+Mel,Mel,Euro/100 kg,2022,600.0
+Plantas Industriais,Cana-de-açúcar,Euro/100 kg,2023,33.4
+Vegetais e Produtos Hortícolas,Alface,Euro/100 kg,2023,156.14
+Vegetais e Produtos Hortícolas,Couve repolho,Euro/100 kg,2023,79.23
+Vegetais e Produtos Hortícolas,Tomate ,Euro/100 kg,2023,172.2
+Vegetais e Produtos Hortícolas,Cenoura,Euro/100 kg,2023,159.5
+Vegetais e Produtos Hortícolas,Feijão verde,Euro/100 kg,2023,239.42
+Vegetais e Produtos Hortícolas,Cebola,Euro/100 kg,2023,147.2
+Vegetais e Produtos Hortícolas,Pepino,Euro/100 kg,2023,161.46
+Vegetais e Produtos Hortícolas,Pimento,Euro/100 kg,2023,223.49
+Vegetais e Produtos Hortícolas,Courgette,Euro/100 kg,2023,140.47
+Vegetais e Produtos Hortícolas,Nabo,Euro/100 kg,2023,160.02
+Vegetais e Produtos Hortícolas,Abóbora,Euro/100 kg,2023,120.43
+Vegetais e Produtos Hortícolas,Acelga,Euro/100 kg,2023,58.07
+Vegetais e Produtos Hortícolas,Pimpinela,Euro/100 kg,2023,110.48
+Plantas e flores,Rosa,Euro/100 unid.,2023,47.12
+Plantas e flores,Cravo,Euro/100 unid.,2023,18.0
+Plantas e flores,Gerbera,Euro/100 unid.,2023,28.81
+Plantas e flores,Estrelícia,Euro/100 unid.,2023,29.96
+Plantas e flores,Antúrio,Euro/100 unid.,2023,68.6
+Plantas e flores,Orquídea,Euro/100 unid.,2023,50.4
+Plantas e flores,Protea,Euro/100 unid.,2023,152.81
+Batata de consumo,Batata primor,Euro/100 kg,2023,110.63
+Batata de consumo,Batata de conservação,Euro/100 kg,2023,91.24
+Frutos ,Maçãs,Euro/100 kg,2023,164.2
+Frutos ,Cerejas,Euro/100 kg,2023,229.99
+Frutos ,Tangerinas,Euro/100 kg,2023,198.0
+Frutos ,Limões,Euro/100 kg,2023,70.23
+Frutos ,Banana,Euro/100 kg,2023,32.81
+Frutos ,Abacate,Euro/100 kg,2023,181.67
+Frutos ,Anona,Euro/100 kg,2023,189.27
+Frutos ,Uvas,Euro/100 kg,2023,121.42
+Outros produtos vegetais,Inhame,Euro/100 kg,2023,120.7
+Outros produtos vegetais,Batata-doce,Euro/100 kg,2023,140.97
+Vinhos,Vinho de qualidade (DO),Euro/hl,2023,1164.25
+Produção animal,Ovos,Euro/100 unid.,2023,20.73
+Leite de vaca a teor real,Leite de vaca a teor real,Euro/100 kg,2023,50.91
+Mel,Mel,Euro/100 kg,2023,600.0
+Plantas Industriais,Cana-de-açúcar,Euro/100 kg,2024,40.0
+Vegetais e Produtos Hortícolas,Alface,Euro/100 kg,2024,156.48
+Vegetais e Produtos Hortícolas,Couve repolho,Euro/100 kg,2024,96.43
+Vegetais e Produtos Hortícolas,Tomate ,Euro/100 kg,2024,189.94
+Vegetais e Produtos Hortícolas,Cenoura,Euro/100 kg,2024,150.31
+Vegetais e Produtos Hortícolas,Feijão verde,Euro/100 kg,2024,285.05
+Vegetais e Produtos Hortícolas,Cebola,Euro/100 kg,2024,137.61
+Vegetais e Produtos Hortícolas,Pepino,Euro/100 kg,2024,163.03
+Vegetais e Produtos Hortícolas,Pimento,Euro/100 kg,2024,309.25
+Vegetais e Produtos Hortícolas,Courgette,Euro/100 kg,2024,146.75
+Vegetais e Produtos Hortícolas,Nabo,Euro/100 kg,2024,160.49
+Vegetais e Produtos Hortícolas,Abóbora,Euro/100 kg,2024,153.37
+Vegetais e Produtos Hortícolas,Acelga,Euro/100 kg,2024,60.48
+Vegetais e Produtos Hortícolas,Pimpinela,Euro/100 kg,2024,124.88
+Plantas e flores,Rosa,Euro/100 unid.,2024,57.0
+Plantas e flores,Cravo,Euro/100 unid.,2024,18.0
+Plantas e flores,Gerbera,Euro/100 unid.,2024,40.0
+Plantas e flores,Estrelícia,Euro/100 unid.,2024,40.0
+Plantas e flores,Antúrio,Euro/100 unid.,2024,80.0
+Plantas e flores,Orquídea,Euro/100 unid.,2024,52.77
+Plantas e flores,Protea,Euro/100 unid.,2024,181.34
+Batata de consumo,Batata primor,Euro/100 kg,2024,114.73
+Batata de consumo,Batata de conservação,Euro/100 kg,2024,102.44
+Frutos ,Maçãs,Euro/100 kg,2024,148.8
+Frutos ,Cerejas,Euro/100 kg,2024,229.99
+Frutos ,Tangerinas,Euro/100 kg,2024,213.01
+Frutos ,Limões,Euro/100 kg,2024,111.71
+Frutos ,Banana,Euro/100 kg,2024,45.99
+Frutos ,Abacate,Euro/100 kg,2024,186.46
+Frutos ,Anona,Euro/100 kg,2024,224.77
+Frutos ,Uvas,Euro/100 kg,2024,131.99
+Outros produtos vegetais,Inhame,Euro/100 kg,2024,115.15
+Outros produtos vegetais,Batata-doce,Euro/100 kg,2024,101.21
+Vinhos,Vinho de qualidade (DO),Euro/hl,2024,1260.0
+Produção animal,Ovos,Euro/100 unid.,2024,20.73
+Leite de vaca a teor real,Leite de vaca a teor real,Euro/100 kg,2024,51.0
+Mel,Mel,Euro/100 kg,2024,650.0

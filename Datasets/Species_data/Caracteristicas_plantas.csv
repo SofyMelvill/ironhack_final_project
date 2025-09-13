@@ -1,0 +1,28 @@
+nome_comum;nome_científico;família;germinacao_Tmin;germinacao_Totima;germincacao_Tmáxima;vegetacao_Tmin;vegetacao_Toptima;vegetacao_Tmax;tolerancia_salinidade;intervalo_otimp_pH;tolerancia_acidez;solo_preferido;sol_fotoperíodo;clima_ideal _°C;necessidade_hidrica;notas_principais
+Abóbora;Curcubita sp.;Curcubitaceae;7,5;32,5;38;10;22,5;32;Moderada a Elevada;6–6,8;Moderada;Franco-arenoso, fértil, bem drenado;Pleno sol (? 6–8h);20–30 °C;Moderada (rega regular);"Não tolera geadas; gosta de calor"
+Banana;Musa acuminata × Musa balbisiana (AA–AAA, etc.);Musaceae;— (propagação vegetativa);—;—;15;28;35;Moderada a elevada (algumas variedades toleram EC 1,6–2 dS/m);5,5–7,5;Moderada;Franco-argiloso, rico em matéria orgânica;Pleno sol (? 8h);26–30 °C;Alta (rega constante);Sensível ao vento forte
+Batata;Solanum tuberosum;Solanaceae;3,5;19;;7;20;32,5;Moderada;5,5–6;Elevada;Franco-arenoso, solto, bem drenado;6–8h sol;15–20 °C;Moderada;Não gosta de solos encharcados
+Batata-doce;Ipomoea batatas;Convolvulaceae;15;27,5;38;15;23,5;35;Moderada;5,5–6,5;Moderada;Arenoso a franco-arenoso, solto;Pleno sol (? 6h);21–26 °C;Baixa a moderada;Tolerante à seca, mas prefere calor
+Cana-de-açúcar;Saccharum officinarum;Poaceae;18;30;38;18;27,5;36,5;Elevada (resiste a EC 1,7–2,5 dS/m);6–7,5;Baixa;Profundos, férteis, franco-argilosos;Pleno sol (? 8h);20–30 °C (ótimo 25–28 °C);Muito alta;Cultura de clima tropical/subtropical
+Cebola;Allium cepa;Alliaceae;2,45;22,5;40;5;18,5;45;Reduzida;6–7;Reduzida;Franco-arenoso, fértil, bem drenado;Pleno sol (? 6h);15–25 °C;Moderada;Requer fotoperíodo adequado para bulbificação
+Couve-repolho;Brassica olereacea L. var. capitata;Brassicaceae;4,5;29;38;7;14;35;Moderada;6,5–7,5;Reduzida;Franco-argiloso, rico em matéria orgânica;Pleno sol ou meia-sombra;15–20 °C;Moderada (rega frequente);Prefere clima fresco
+Feijão-verde;Phaseolus;Leguminoseae;7,7;27,5;35;9;22,5;35;Reduzida;6–6,5;Moderada;Franco-arenoso, fértil, drenado;Pleno sol (? 6h);18–24 °C;Moderada;Sensível a geadas e excesso de calor
+Milho p/ maçaroca;Zea mays;Poaceae;10;24;40;10;25;35;Moderada;6–7;Moderada;Profundos, férteis, franco-argilosos;Pleno sol (? 8h);20–27 °C;Alta;Exigente em nutrientes e água
+Vinha (Vitis vinifera);Vitis vinifera L.;Vitaceae;10;27,5;35;10;22,5;35;Moderada (sensível acima de 2 dS/m);6–7,5;Moderada;Pobres, pedregosos, bem drenados;Pleno sol (? 8h);18–25 °C;Baixa a moderada;Estresse hídrico ligeiro favorece qualidade
+Tomate;Solanum lycopersicum;Solanaceae;10;25;35;10;22,5;35;Moderada (sensível ao solo salino) (ScienceDirect);6.0-6.8;Moderada;Solos férteis, bem drenados, ricos em matéria orgânica, textura franca a franco-arenosa;Planta de dias neutros (não depende fortemente do fotoperíodo), mas precisa de muito sol direto (?6–8h/dia);21 e 27 °C;Elevada, cerca de 600–800 mm por ciclo, com maior exigência durante a floração e frutificação.;
+Alface;Lactuca sativa;Asteraceae;4;21;28;7;17,5;30;Reduzida;6,0–7,0;Moderada;Solos férteis, bem drenados, ricos em matéria orgânica;10–14 h de luz;15–20 °C;Moderada a elevada (rega frequente, não encharcar);
+Cenoura;Daucus carota;Apiaceae;4;22;30;7;19;27;Reduzida;6,0–6,8;Reduzida;Solos soltos, arenosos, profundos, pH 6–6,8;10–12 h;16–22 °C;Moderada (necessita humidade constante);
+Pepino;Cucumis sativus;Cucurbitaceae;12;29;35;15;26,5;35;Moderada;6,0–7,0;Reduzida;Solos leves, férteis, bem drenados;12–14 h;20–28 °C;Elevada (exigente em água);
+Pimento;Capsicum annuum;Solanaceae;15;27,5;35;15;25;35;Moderada;6,0–7,0;Moderada;Solos francos, férteis, pH 6–7;12–14 h;20–30 °C;Moderada a elevada;
+Courgette;Cucurbita pepo;Cucurbitaceae;12;29;35;15;22,5;35;Moderada;6,0–7,5;Reduzida;Solos leves, férteis, ricos em MO;12–14 h;18–25 °C;Moderada (rega regular);
+Nabo;Brassica rapa var. rapa;Brassicaceae;5;22,5;30;7;17,5;27;Reduzida;6,0–7,5;Moderada;Solos frescos, francos, férteis;10–12 h;10–18 °C;Moderada;
+Acelga;Beta vulgaris var. cicla;Amaranthaceae;5;22,5;30;7;17,5;30;Moderada;6,0–7,5;Moderada;Solos profundos, húmidos, pH 6–7,5;10–12 h;15–20 °C;Moderada;
+Pimpinela (Chuchu);Sechium edule;Cucurbitaceae;18;26,5;35;15;24;35;Moderada;5,5–6,5;Elevada;Solos profundos, húmidos, ricos em MO;12–14 h;18–25 °C;Elevada;
+Maçã;Malus domestica;Rosaceae;5 (estratificação);17,5;25;7;20;30;Reduzida;5,5–7,0;Moderada;franco-arenoso a franco-argiloso, profundo, fértil, bem drenado.;pleno sol (? 6–8 h);18–24 °C;moderada;
+Cereja;Prunus avium;Rosaceae;4 (estratificação);17,5;25;7;19;30;Reduzida;6,0–7,5;Moderada;franco-argiloso, fértil, profundo;pleno sol (? 6 h);15–25 °C;moderada;
+Tangerina;Citrus reticulata;Rutaceae;12;26,5;35;12;24;35;Moderada;5,5–7,0;Moderada;franco-arenoso a franco-argiloso, fértil, profundo;pleno sol (? 8 h);20–30 °C;moderada a elevada;
+Limão;Citrus limon;Rutaceae;12;26,5;35;12;24;35;Moderada;5,5–7,0;Moderada;franco-arenoso, profundo, fértil;pleno sol (? 8 h);20–30 °C;elevada;
+Abacate;Persea americana;Lauraceae;15;26,5;35;12;22,5;35;Moderada;5,5–7,0;Moderada;franco-arenoso a franco-argiloso, bem drenado;pleno sol (? 6–8 h);18–26 °C;moderada a elevada;
+Anona;Annona cherimola;Annonaceae;15;26,5;35;12;22,5;35;Reduzida;5,5–7,0;Moderada;franco-arenoso, fértil, profundo, bem drenado.;pleno sol (? 6 h);18–26 °C;moderada;
+Uva (Vitis);Vitis vinifera;Vitaceae;10;26,5;35;10;24;35;Moderada;6,0–7,5;Reduzida;Pobres, pedregosos, bem drenados;Pleno sol (? 8h);18–25 °C;Baixa a moderada;
+Inhame;Colocasia esculenta;Araceae;20;27,5;35;18;27,5;35;Elevada;5,5–6,5;Elevada;Solos argilo-arenosos, húmidos, bem drenados;12 h;25–30 °C;Elevada (planta de clima húmido);
