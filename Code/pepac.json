@@ -1,0 +1,96 @@
+{
+  "F.1.1": {
+    "name": "Investment in agricultural holdings",
+    "objective": "Modernize, improve performance, production, sustainability, innovation.",
+    "beneficiaries": "Farmers, Producer Organizations, farmer groups in Madeira",
+    "criteria": [
+      "Scales: small (1,000-20,000€), medium (20,000-100,000€), large (>100,000€)",
+      "Technical and economic feasibility",
+      "Compliance with legal requirements and EU standards"
+    ],
+    "support": "Small: up to 70-80%; Medium: up to 60-80%; Large: up to 50-80%; possible bonuses"
+  },
+  "F.1.2": {
+    "name": "Installation of young farmers",
+    "objective": "Support young people to start an agricultural holding.",
+    "beneficiaries": "Young farmers in Madeira",
+    "criteria": [
+      "Same scales and requirements as F.1.1"
+    ],
+    "support": "Similar to F.1.1; with bonuses for organic/strategic projects"
+  },
+  "F.1.3": {
+    "name": "Processing and marketing of agricultural products",
+    "objective": "Introduce/modernize technologies, improve packaging, storage, and quality.",
+    "beneficiaries": "Farmers, companies (SME or not), Madeira’s public sector",
+    "criteria": [
+      "Investment up to €7,500,000",
+      "Business plan, technical and financial viability",
+      "Licenses and compliance"
+    ],
+    "support": "Up to 80%, depending on SME/non-SME, rural/non-rural, young farmer"
+  },
+  "F.1.4": {
+    "name": "Investment in collective irrigation",
+    "objective": "Sustainable irrigation infrastructures, water transport and storage.",
+    "beneficiaries": "Water management entities, Madeira public sector, farmer associations",
+    "criteria": [
+      "Minimum 10% water savings in improvements",
+      "River basin management plan",
+      "Compliance with technical and legal requirements"
+    ],
+    "support": "100% of eligible expenses"
+  },
+  "F.1.5": {
+    "name": "Access to agricultural holdings",
+    "objective": "Paths, tracks, access to improve competitiveness.",
+    "beneficiaries": "Public administration, municipalities, associations, Madeira public sector",
+    "criteria": [
+      "Licensing and environmental impact if applicable",
+      "Compliance with public procurement rules"
+    ],
+    "support": "100% of eligible expenses"
+  },
+  "F.1.6": {
+    "name": "Restoration of agricultural production potential",
+    "objective": "Recover production after natural disasters.",
+    "beneficiaries": "Producers, public entities, organizations",
+    "criteria": [
+      "Area officially recognized as affected",
+      "Losses ≥30%",
+      "Validation by competent authorities"
+    ],
+    "support": "100% of eligible expenses"
+  },
+  "F.1.7": {
+    "name": "Non-productive investments",
+    "objective": "Support walls, protection against wildlife, preservation of landscape/biodiversity.",
+    "beneficiaries": "Farmers, Producer Organizations, groups, Madeira public sector",
+    "criteria": [
+      "Technical feasibility",
+      "Integration with landscape/tradition"
+    ],
+    "support": "100% of eligible expenses"
+  },
+  "F.4.1": {
+    "name": "Young farmer installation premium",
+    "objective": "Provide financial support to young farmers setting up for the first time.",
+    "beneficiaries": "Young farmers 18-40 years old, individuals or legal entities",
+    "criteria": [
+      "3-year business plan",
+      "Minimum area: 0.5ha (open field) or 0.25ha (greenhouses)",
+      "Commitment to be an Active Farmer for 5 years"
+    ],
+    "support": "Non-repayable premium; amount depends on farm size and farmer status"
+  },
+  "F.5.1": {
+    "name": "Crop, animal, and plant insurance premium",
+    "objective": "Reduce climate risks, diseases, and pests through insurance.",
+    "beneficiaries": "Madeira farmers with eligible insurance policies",
+    "criteria": [
+      "Valid insurance for covered crops/animals/plants",
+      "Compliance with deadlines and application submission"
+    ],
+    "support": "Co-financing of insurance premium (percentage legally defined)"
+  }
+}

@@ -1,28 +1,28 @@
 cultura,score_global,necessidade_hidrica_num,tolerancia_acidez_num,tolerancia_salinidade_num,solo_pref_cat,sol_fotoperiodo_cat,classificacao
-Abóbora,0.9,1.0,1.0,1.0,0.5,1.0,Green
-Banana,0.8,0.0,1.0,1.0,1.0,1.0,Green
-Batata,0.5,1.0,0.0,1.0,0.5,0.0,Yellow
-Batata-doce,0.8,0.5,1.0,1.0,0.5,1.0,Green
-Cana-de-açúcar,0.5,0.0,0.5,0.0,1.0,1.0,Yellow
-Cebola,0.5,1.0,0.0,0.0,0.5,1.0,Yellow
-Couve-repolho,0.6,1.0,0.0,1.0,1.0,0.0,Yellow
-Feijão-verde,0.7,1.0,1.0,0.0,0.5,1.0,Yellow
-Milho p/ maçaroca,0.8,0.0,1.0,1.0,1.0,1.0,Green
-Vinha (Vitis vinifera),0.7,0.5,1.0,1.0,0.0,1.0,Yellow
-Tomate,0.6,0.0,1.0,1.0,1.0,0.0,Yellow
-Alface,0.4,1.0,1.0,0.0,0.0,0.0,Red
-Cenoura,0.3,1.0,0.0,0.0,0.5,0.0,Red
-Pepino,0.2,0.0,0.0,1.0,0.0,0.0,Red
-Pimento,0.8,1.0,1.0,1.0,1.0,0.0,Green
-Courgette,0.4,1.0,0.0,1.0,0.0,0.0,Red
-Nabo,0.6,1.0,1.0,0.0,1.0,0.0,Yellow
-Acelga,0.6,1.0,1.0,1.0,0.0,0.0,Yellow
-Pimpinela (Chuchu),0.2,0.0,0.0,1.0,0.0,0.0,Red
-Maçã,0.7,1.0,1.0,0.0,0.5,1.0,Yellow
-Cereja,0.8,1.0,1.0,0.0,1.0,1.0,Green
-Tangerina,0.9,1.0,1.0,1.0,0.5,1.0,Green
-Limão,0.7,0.0,1.0,1.0,0.5,1.0,Yellow
-Abacate,0.9,1.0,1.0,1.0,0.5,1.0,Green
-Anona,0.7,1.0,1.0,0.0,0.5,1.0,Yellow
-Uva (Vitis),0.5,0.5,0.0,1.0,0.0,1.0,Yellow
+Abóbora,0.3,0.0,0.0,0.0,0.5,1.0,Red
+Banana,0.5,0.0,0.0,0.5,1.0,1.0,Yellow
+Batata,0.1,0.0,0.0,0.0,0.5,0.0,Red
+Batata-doce,0.5,1.0,0.0,0.0,0.5,1.0,Yellow
+Cana-de-açúcar,0.4,0.0,0.0,0.0,1.0,1.0,Red
+Cebola,0.3,0.0,0.0,0.0,0.5,1.0,Red
+Couve-repolho,0.2,0.0,0.0,0.0,1.0,0.0,Red
+Feijão-verde,0.3,0.0,0.0,0.0,0.5,1.0,Red
+Milho p/ maçaroca,0.4,0.0,0.0,0.0,1.0,1.0,Red
+Vinha (Vitis vinifera),0.4,1.0,0.0,0.0,0.0,1.0,Red
+Tomate,0.2,0.0,0.0,0.0,1.0,0.0,Red
+Alface,0.1,0.5,0.0,0.0,0.0,0.0,Red
+Cenoura,0.1,0.0,0.0,0.0,0.5,0.0,Red
+Pepino,0.0,0.0,0.0,0.0,0.0,0.0,Red
+Pimento,0.3,0.5,0.0,0.0,1.0,0.0,Red
+Courgette,0.0,0.0,0.0,0.0,0.0,0.0,Red
+Nabo,0.2,0.0,0.0,0.0,1.0,0.0,Red
+Acelga,0.0,0.0,0.0,0.0,0.0,0.0,Red
+Pimpinela (Chuchu),0.0,0.0,0.0,0.0,0.0,0.0,Red
+Maçã,0.5,1.0,0.0,0.0,0.5,1.0,Yellow
+Cereja,0.6,1.0,0.0,0.0,1.0,1.0,Yellow
+Tangerina,0.5,1.0,0.0,0.0,0.5,1.0,Yellow
+Limão,0.4,0.5,0.0,0.0,0.5,1.0,Red
+Abacate,0.5,1.0,0.0,0.0,0.5,1.0,Yellow
+Anona,0.5,1.0,0.0,0.0,0.5,1.0,Yellow
+Uva (Vitis),0.4,1.0,0.0,0.0,0.0,1.0,Red
 Inhame,0.1,0.0,0.0,0.0,0.5,0.0,Red

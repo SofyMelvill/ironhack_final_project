@@ -1,0 +1,2082 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0818.1050                               -->
+<workbook original-version='18.1' source-build='2025.2.2 (20252.25.0818.1050)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (dataset_tableau)' inline='true' name='federated.1g6lxya0ezr4v413v97vv053j7ta' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dataset_tableau' name='excel-direct.1bdrmrb1i0vu5l13l8bf00cmcu40'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/sofia/Documents/Data_Analytics_Ironhack/Projects/ironhack_final_project/Worked_datasets/dataset_tableau.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1bdrmrb1i0vu5l13l8bf00cmcu40' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:P126:no:A1:P126:0' header='yes' outcome='6'>
+            <column datatype='string' name='Cultura' ordinal='0' />
+            <column datatype='integer' name='Ano' ordinal='1' />
+            <column datatype='real' name='Preco' ordinal='2' />
+            <column datatype='real' name='Superficie' ordinal='3' />
+            <column datatype='real' name='Producao' ordinal='4' />
+            <column datatype='real' name='score_agro' ordinal='5' />
+            <column datatype='string' name='unidade' ordinal='6' />
+            <column datatype='string' name='categoria' ordinal='7' />
+            <column datatype='integer' name='solo_pref_cat' ordinal='8' />
+            <column datatype='integer' name='sol_fotoperiodo_cat' ordinal='9' />
+            <column datatype='integer' name='necessidade_hidrica_num' ordinal='10' />
+            <column datatype='integer' name='tolerancia_acidez_num' ordinal='11' />
+            <column datatype='integer' name='tolerancia_salinidade_num' ordinal='12' />
+            <column datatype='real' name='ph_min' ordinal='13' />
+            <column datatype='real' name='ph_max' ordinal='14' />
+            <column datatype='integer' name='sol_min' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P126:no:A1:P126:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cultura</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Cultura]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Cultura</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RPT_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ano</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ano]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Ano</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Preco</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Preco]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Preco</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Superficie</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Superficie]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Superficie</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Producao</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Producao]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Producao</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score_agro</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score_agro]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>score_agro</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unidade</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[unidade]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>unidade</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RPT_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categoria</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[categoria]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>categoria</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RPT_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>solo_pref_cat</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[solo_pref_cat]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>solo_pref_cat</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sol_fotoperiodo_cat</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sol_fotoperiodo_cat]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>sol_fotoperiodo_cat</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>necessidade_hidrica_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[necessidade_hidrica_num]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>necessidade_hidrica_num</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tolerancia_acidez_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tolerancia_acidez_num]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>tolerancia_acidez_num</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tolerancia_salinidade_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tolerancia_salinidade_num]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>tolerancia_salinidade_num</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ph_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ph_min]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ph_min</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ph_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ph_max]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ph_max</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sol_min</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sol_min]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>sol_min</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ano1' datatype='integer' name='[Ano]' role='dimension' type='quantitative' />
+      <column caption='fixed_score_agro' datatype='real' name='[Calculation_1950058692063109121]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([score_agro]) }' />
+      </column>
+      <column caption='fixed_price' datatype='real' name='[Calculation_1950058692064608258]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([Preco]) }' />
+      </column>
+      <column caption='fixed_production' datatype='real' name='[Calculation_1950058692066455555]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([Producao]) }' />
+      </column>
+      <column caption='max_fixed_price' datatype='real' name='[Calculation_1950058692118220804]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED : MAX([Calculation_1950058692064608258]) }' />
+      </column>
+      <column caption='max_fixed_production' datatype='real' name='[Calculation_1950058692122103813]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED : MAX([Calculation_1950058692066455555]) }' />
+      </column>
+      <column caption='max_fixed_price_production' datatype='real' name='[Calculation_1950058692122288134]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0.4 * [Calculation_1950058692063109121]&#13;&#10;+ 0.3 * ZN([Calculation_1950058692064608258])      / NULLIF([Calculation_1950058692118220804], 0)&#13;&#10;+ 0.3 * ZN([Calculation_1950058692066455555]) / NULLIF([Calculation_1950058692122103813], 0)' />
+      </column>
+      <column caption='semaforo' datatype='string' name='[Calculation_1950058692123176968]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_1950058692122288134] &gt;= 0.7 THEN &quot;Verde&quot;&#13;&#10;ELSEIF [Calculation_1950058692122288134] &gt;= 0.5 THEN &quot;Amarelo&quot;&#13;&#10;ELSE &quot;Vermelho&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Cultura1' datatype='string' name='[Cultura]' role='dimension' type='nominal' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_226365393C714F4E87E43F62F0B1768F]' role='measure' type='quantitative' />
+      <column caption='Categoria' datatype='string' name='[categoria]' role='dimension' type='nominal' />
+      <column caption='Necessidade Hidrica Num' datatype='integer' name='[necessidade_hidrica_num]' role='dimension' type='ordinal' />
+      <column caption='Ph Max' datatype='real' name='[ph_max]' role='measure' type='quantitative' />
+      <column caption='Ph Min' datatype='real' name='[ph_min]' role='measure' type='quantitative' />
+      <column caption='Score Agro' datatype='real' name='[score_agro]' role='measure' type='quantitative' />
+      <column caption='Sol Fotoperiodo Cat' datatype='integer' name='[sol_fotoperiodo_cat]' role='measure' type='quantitative' />
+      <column caption='Sol Min' datatype='integer' name='[sol_min]' role='measure' type='quantitative' />
+      <column caption='Solo Pref Cat' datatype='integer' name='[solo_pref_cat]' role='measure' type='quantitative' />
+      <column caption='Tolerancia Acidez Num' datatype='integer' name='[tolerancia_acidez_num]' role='dimension' type='ordinal' />
+      <column caption='Tolerancia Salinidade Num' datatype='integer' name='[tolerancia_salinidade_num]' role='dimension' type='ordinal' />
+      <column caption='Unidade' datatype='string' name='[unidade]' role='dimension' type='nominal' />
+      <column-instance column='[Ano]' derivation='None' name='[none:Ano:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_1950058692123176968]' derivation='None' name='[none:Calculation_1950058692123176968:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Cultura]' derivation='None' name='[none:Cultura:nk]' pivot='key' type='nominal' />
+      <group caption='Ação (Ano1,Cultura1)' hidden='true' name='[Action (Ano1,Cultura1)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Ano:ok]' />
+          <groupfilter function='level-members' level='[Cultura]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='pt_BR' class='hyper' dbname='C:/Users/sofia/AppData/Local/Temp/TableauTemp/#TableauTemp_1dx6s400qzq6km146lzj9017jo34.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/14/2025 09:58:26 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Cultura</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Cultura]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cultura</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ano</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Ano]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ano</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Preco</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Preco]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Preco</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>107</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Superficie</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Superficie]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Superficie</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>80</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Producao</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Producao]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Producao</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>113</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>score_agro</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[score_agro]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>score_agro</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>unidade</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[unidade]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>unidade</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>categoria</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[categoria]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>categoria</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>solo_pref_cat</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[solo_pref_cat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>solo_pref_cat</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sol_fotoperiodo_cat</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sol_fotoperiodo_cat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sol_fotoperiodo_cat</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>necessidade_hidrica_num</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[necessidade_hidrica_num]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>necessidade_hidrica_num</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tolerancia_acidez_num</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tolerancia_acidez_num]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tolerancia_acidez_num</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tolerancia_salinidade_num</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tolerancia_salinidade_num]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tolerancia_salinidade_num</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ph_min</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ph_min]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ph_min</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ph_max</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ph_max]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ph_max</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sol_min</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sol_min]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sol_min</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_226365393C714F4E87E43F62F0B1768F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Cultura:nk]' palette='tableau-20' type='palette'>
+            <map to='#17becf'>
+              <bucket>&quot;uva-vitis&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;abacate&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;banana&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;maca&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;couve-repolho&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;cebola&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;batata&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;abobora&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;tangerina&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;feijao-verde&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;cenoura&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;nabo&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;batata-doce&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;tomate&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;inhame&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;limao&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;alface&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;cana-de-acucar&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;anona&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1950058692123176968:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Verde&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Vermelho&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Amarelo&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;PT&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_226365393C714F4E87E43F62F0B1768F'>
+            <properties context=''>
+              <relation connection='excel-direct.1bdrmrb1i0vu5l13l8bf00cmcu40' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:P126:no:A1:P126:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Cultura' ordinal='0' />
+                  <column datatype='integer' name='Ano' ordinal='1' />
+                  <column datatype='real' name='Preco' ordinal='2' />
+                  <column datatype='real' name='Superficie' ordinal='3' />
+                  <column datatype='real' name='Producao' ordinal='4' />
+                  <column datatype='real' name='score_agro' ordinal='5' />
+                  <column datatype='string' name='unidade' ordinal='6' />
+                  <column datatype='string' name='categoria' ordinal='7' />
+                  <column datatype='integer' name='solo_pref_cat' ordinal='8' />
+                  <column datatype='integer' name='sol_fotoperiodo_cat' ordinal='9' />
+                  <column datatype='integer' name='necessidade_hidrica_num' ordinal='10' />
+                  <column datatype='integer' name='tolerancia_acidez_num' ordinal='11' />
+                  <column datatype='integer' name='tolerancia_salinidade_num' ordinal='12' />
+                  <column datatype='real' name='ph_min' ordinal='13' />
+                  <column datatype='real' name='ph_max' ordinal='14' />
+                  <column datatype='integer' name='sol_min' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Area_by_crop'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='14'>Crops total area (ha)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (dataset_tableau)' name='federated.1g6lxya0ezr4v413v97vv053j7ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1g6lxya0ezr4v413v97vv053j7ta'>
+            <column caption='fixed_score_agro' datatype='real' name='[Calculation_1950058692063109121]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([score_agro]) }' />
+            </column>
+            <column caption='fixed_price' datatype='real' name='[Calculation_1950058692064608258]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([Preco]) }' />
+            </column>
+            <column caption='fixed_production' datatype='real' name='[Calculation_1950058692066455555]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([Producao]) }' />
+            </column>
+            <column caption='max_fixed_price' datatype='real' name='[Calculation_1950058692118220804]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : MAX([Calculation_1950058692064608258]) }' />
+            </column>
+            <column caption='max_fixed_production' datatype='real' name='[Calculation_1950058692122103813]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : MAX([Calculation_1950058692066455555]) }' />
+            </column>
+            <column caption='max_fixed_price_production' datatype='real' name='[Calculation_1950058692122288134]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0.4 * [Calculation_1950058692063109121]&#13;&#10;+ 0.3 * ZN([Calculation_1950058692064608258])      / NULLIF([Calculation_1950058692118220804], 0)&#13;&#10;+ 0.3 * ZN([Calculation_1950058692066455555]) / NULLIF([Calculation_1950058692122103813], 0)' />
+            </column>
+            <column caption='semaforo' datatype='string' name='[Calculation_1950058692123176968]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_1950058692122288134] &gt;= 0.7 THEN &quot;Verde&quot;&#13;&#10;ELSEIF [Calculation_1950058692122288134] &gt;= 0.5 THEN &quot;Amarelo&quot;&#13;&#10;ELSE &quot;Vermelho&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Cultura1' datatype='string' name='[Cultura]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Preco]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Producao]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Superficie]' role='measure' type='quantitative' />
+            <column-instance column='[Preco]' derivation='Avg' name='[avg:Preco:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Superficie]' derivation='Avg' name='[avg:Superficie:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1950058692123176968]' derivation='None' name='[none:Calculation_1950058692123176968:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cultura]' derivation='None' name='[none:Cultura:nk]' pivot='key' type='nominal' />
+            <column caption='Score Agro' datatype='real' name='[score_agro]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Cultura])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Cultura:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Superficie:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Superficie:qk]' scope='cols' value='Area (ha)' />
+            <format attr='height' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Superficie:qk]' value='56' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Superficie:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Calculation_1950058692123176968:nk]' />
+              <size column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Preco:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]</rows>
+        <cols>[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Superficie:qk]</cols>
+      </table>
+      <simple-id uuid='{A4C9769F-DC64-4844-B6F5-36D6AECE6282}' />
+    </worksheet>
+    <worksheet name='AvgPrice_vs_AvgProduction'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (dataset_tableau)' name='federated.1g6lxya0ezr4v413v97vv053j7ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1g6lxya0ezr4v413v97vv053j7ta'>
+            <column caption='fixed_score_agro' datatype='real' name='[Calculation_1950058692063109121]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([score_agro]) }' />
+            </column>
+            <column caption='fixed_price' datatype='real' name='[Calculation_1950058692064608258]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([Preco]) }' />
+            </column>
+            <column caption='fixed_production' datatype='real' name='[Calculation_1950058692066455555]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([Producao]) }' />
+            </column>
+            <column caption='max_fixed_price' datatype='real' name='[Calculation_1950058692118220804]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : MAX([Calculation_1950058692064608258]) }' />
+            </column>
+            <column caption='max_fixed_production' datatype='real' name='[Calculation_1950058692122103813]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : MAX([Calculation_1950058692066455555]) }' />
+            </column>
+            <column caption='max_fixed_price_production' datatype='real' name='[Calculation_1950058692122288134]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0.4 * [Calculation_1950058692063109121]&#13;&#10;+ 0.3 * ZN([Calculation_1950058692064608258])      / NULLIF([Calculation_1950058692118220804], 0)&#13;&#10;+ 0.3 * ZN([Calculation_1950058692066455555]) / NULLIF([Calculation_1950058692122103813], 0)' />
+            </column>
+            <column caption='semaforo' datatype='string' name='[Calculation_1950058692123176968]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_1950058692122288134] &gt;= 0.7 THEN &quot;Verde&quot;&#13;&#10;ELSEIF [Calculation_1950058692122288134] &gt;= 0.5 THEN &quot;Amarelo&quot;&#13;&#10;ELSE &quot;Vermelho&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Cultura1' datatype='string' name='[Cultura]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Preco]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Producao]' role='measure' type='quantitative' />
+            <column-instance column='[Preco]' derivation='Avg' name='[avg:Preco:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Producao]' derivation='Avg' name='[avg:Producao:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1950058692123176968]' derivation='None' name='[none:Calculation_1950058692123176968:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cultura]' derivation='None' name='[none:Cultura:nk]' pivot='key' type='nominal' />
+            <column-instance column='[unidade]' derivation='None' name='[none:unidade:nk]' pivot='key' type='nominal' />
+            <column caption='Score Agro' datatype='real' name='[score_agro]' role='measure' type='quantitative' />
+            <column caption='Unidade' datatype='string' name='[unidade]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Producao:qk]' scope='cols' value='Average production (t)' />
+            <format attr='title' class='0' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Preco:qk]' scope='rows' value='Average price (€/100 Kg)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Calculation_1950058692123176968:nk]' />
+              <lod column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:unidade:nk]' />
+              <text column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='shape' value='asterisk' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='717' />
+                <format attr='maxwidth' value='717' />
+                <format attr='minheight' value='400' />
+                <format attr='maxheight' value='400' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Preco:qk]</rows>
+        <cols>[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Producao:qk]</cols>
+      </table>
+      <simple-id uuid='{1849D133-18F2-4721-8697-286005E7059D}' />
+    </worksheet>
+    <worksheet name='Planilha 10'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='10'>Products with the highest prices on the producer</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (dataset_tableau)' name='federated.1g6lxya0ezr4v413v97vv053j7ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1g6lxya0ezr4v413v97vv053j7ta'>
+            <column caption='Ano1' datatype='integer' name='[Ano]' role='dimension' type='quantitative' />
+            <column caption='Cultura1' datatype='string' name='[Cultura]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Preco]' role='measure' type='quantitative' />
+            <column-instance column='[Preco]' derivation='Avg' name='[avg:Preco:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='None' name='[none:Ano:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cultura]' derivation='None' name='[none:Cultura:nk]' pivot='key' type='nominal' />
+            <column-instance column='[unidade]' derivation='None' name='[none:unidade:nk]' pivot='key' type='nominal' />
+            <column caption='Unidade' datatype='string' name='[unidade]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([Preco])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Cultura:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Preco:qk]' scope='rows' value='Average price (€/100 Kg)' />
+            <format attr='title' class='0' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Ano:qk]' scope='cols' value='Year' />
+            <encoding attr='space' class='0' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Ano:qk]' field-type='quantitative' max='2024' min='2019' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]' />
+              <lod column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:unidade:nk]' />
+              <text column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Preco:qk]</rows>
+        <cols>[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Ano:qk]</cols>
+      </table>
+      <simple-id uuid='{EB4A140F-744F-4774-BEC7-D128AB30F7E8}' />
+    </worksheet>
+    <worksheet name='Planilha 11'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BE0600BA-5947-416E-8001-6C4C7A4BBB42}' />
+    </worksheet>
+    <worksheet name='Planilha 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (dataset_tableau)' name='federated.1g6lxya0ezr4v413v97vv053j7ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1g6lxya0ezr4v413v97vv053j7ta'>
+            <column caption='Ano1' datatype='integer' name='[Ano]' role='dimension' type='quantitative' />
+            <column datatype='real' name='[Preco]' role='measure' type='quantitative' />
+            <column-instance column='[Preco]' derivation='Avg' name='[avg:Preco:qk]' pivot='key' type='quantitative' />
+            <column caption='Categoria' datatype='string' name='[categoria]' role='dimension' type='nominal' />
+            <column-instance column='[Ano]' derivation='None' name='[none:Ano:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[categoria]' derivation='None' name='[none:categoria:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:categoria:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Preco:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Ano:qk]' palette='tableau-orange-blue-light' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Ano:qk]' />
+              <lod column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Ano:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Preco:qk]</rows>
+        <cols>[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:categoria:nk]</cols>
+      </table>
+      <simple-id uuid='{FBDF0ADB-017F-46CD-B80B-E12DBC8DA818}' />
+    </worksheet>
+    <worksheet name='Produce_avgPrice'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Average price of products (€/100Kg)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (dataset_tableau)' name='federated.1g6lxya0ezr4v413v97vv053j7ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1g6lxya0ezr4v413v97vv053j7ta'>
+            <column caption='fixed_score_agro' datatype='real' name='[Calculation_1950058692063109121]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([score_agro]) }' />
+            </column>
+            <column caption='fixed_price' datatype='real' name='[Calculation_1950058692064608258]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([Preco]) }' />
+            </column>
+            <column caption='fixed_production' datatype='real' name='[Calculation_1950058692066455555]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([Producao]) }' />
+            </column>
+            <column caption='max_fixed_price' datatype='real' name='[Calculation_1950058692118220804]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : MAX([Calculation_1950058692064608258]) }' />
+            </column>
+            <column caption='max_fixed_production' datatype='real' name='[Calculation_1950058692122103813]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : MAX([Calculation_1950058692066455555]) }' />
+            </column>
+            <column caption='max_fixed_price_production' datatype='real' name='[Calculation_1950058692122288134]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0.4 * [Calculation_1950058692063109121]&#13;&#10;+ 0.3 * ZN([Calculation_1950058692064608258])      / NULLIF([Calculation_1950058692118220804], 0)&#13;&#10;+ 0.3 * ZN([Calculation_1950058692066455555]) / NULLIF([Calculation_1950058692122103813], 0)' />
+            </column>
+            <column caption='semaforo' datatype='string' name='[Calculation_1950058692123176968]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_1950058692122288134] &gt;= 0.7 THEN &quot;Verde&quot;&#13;&#10;ELSEIF [Calculation_1950058692122288134] &gt;= 0.5 THEN &quot;Amarelo&quot;&#13;&#10;ELSE &quot;Vermelho&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Cultura1' datatype='string' name='[Cultura]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Preco]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Producao]' role='measure' type='quantitative' />
+            <column-instance column='[Preco]' derivation='Avg' name='[avg:Preco:qk]' pivot='key' type='quantitative' />
+            <column caption='Categoria' datatype='string' name='[categoria]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1950058692123176968]' derivation='None' name='[none:Calculation_1950058692123176968:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cultura]' derivation='None' name='[none:Cultura:nk]' pivot='key' type='nominal' />
+            <column-instance column='[categoria]' derivation='None' name='[none:categoria:nk]' pivot='key' type='nominal' />
+            <column-instance column='[unidade]' derivation='None' name='[none:unidade:nk]' pivot='key' type='nominal' />
+            <column caption='Score Agro' datatype='real' name='[score_agro]' role='measure' type='quantitative' />
+            <column-instance column='[Preco]' derivation='Sum' name='[sum:Preco:qk]' pivot='key' type='quantitative' />
+            <column caption='Unidade' datatype='string' name='[unidade]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Preco:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Preco:qk]' scope='cols' value='Average Price (€/100 Kg)' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Preco:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Calculation_1950058692123176968:nk]' />
+              <lod column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:categoria:nk]' />
+              <lod column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:unidade:nk]' />
+              <text column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[sum:Preco:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]</rows>
+        <cols>[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Preco:qk]</cols>
+      </table>
+      <simple-id uuid='{962303C8-615D-4EEB-AF5B-C7C3C3FD5283}' />
+    </worksheet>
+    <worksheet name='Production_by_category'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (dataset_tableau)' name='federated.1g6lxya0ezr4v413v97vv053j7ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1g6lxya0ezr4v413v97vv053j7ta'>
+            <column caption='Ano1' datatype='integer' name='[Ano]' role='dimension' type='quantitative' />
+            <column datatype='real' name='[Producao]' role='measure' type='quantitative' />
+            <column caption='Categoria' datatype='string' name='[categoria]' role='dimension' type='nominal' />
+            <column-instance column='[Ano]' derivation='None' name='[none:Ano:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[categoria]' derivation='None' name='[none:categoria:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Producao]' derivation='Sum' name='[sum:Producao:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[sum:Producao:qk]' scope='rows' value='Production (t)' />
+            <format attr='title' class='0' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Ano:qk]' scope='cols' value='Year' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:categoria:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1g6lxya0ezr4v413v97vv053j7ta].[sum:Producao:qk]</rows>
+        <cols>[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Ano:qk]</cols>
+      </table>
+      <simple-id uuid='{5F5913B8-0620-4E6B-BEDD-394929CF7EAE}' />
+    </worksheet>
+    <worksheet name='Production_by_crop'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='14'>Average production by crop (t)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (dataset_tableau)' name='federated.1g6lxya0ezr4v413v97vv053j7ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1g6lxya0ezr4v413v97vv053j7ta'>
+            <column caption='fixed_score_agro' datatype='real' name='[Calculation_1950058692063109121]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([score_agro]) }' />
+            </column>
+            <column caption='fixed_price' datatype='real' name='[Calculation_1950058692064608258]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([Preco]) }' />
+            </column>
+            <column caption='fixed_production' datatype='real' name='[Calculation_1950058692066455555]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([Producao]) }' />
+            </column>
+            <column caption='max_fixed_price' datatype='real' name='[Calculation_1950058692118220804]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : MAX([Calculation_1950058692064608258]) }' />
+            </column>
+            <column caption='max_fixed_production' datatype='real' name='[Calculation_1950058692122103813]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : MAX([Calculation_1950058692066455555]) }' />
+            </column>
+            <column caption='max_fixed_price_production' datatype='real' name='[Calculation_1950058692122288134]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0.4 * [Calculation_1950058692063109121]&#13;&#10;+ 0.3 * ZN([Calculation_1950058692064608258])      / NULLIF([Calculation_1950058692118220804], 0)&#13;&#10;+ 0.3 * ZN([Calculation_1950058692066455555]) / NULLIF([Calculation_1950058692122103813], 0)' />
+            </column>
+            <column caption='semaforo' datatype='string' name='[Calculation_1950058692123176968]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_1950058692122288134] &gt;= 0.7 THEN &quot;Verde&quot;&#13;&#10;ELSEIF [Calculation_1950058692122288134] &gt;= 0.5 THEN &quot;Amarelo&quot;&#13;&#10;ELSE &quot;Vermelho&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Cultura1' datatype='string' name='[Cultura]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Preco]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Producao]' role='measure' type='quantitative' />
+            <column-instance column='[Producao]' derivation='Avg' name='[avg:Producao:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1950058692123176968]' derivation='None' name='[none:Calculation_1950058692123176968:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cultura]' derivation='None' name='[none:Cultura:nk]' pivot='key' type='nominal' />
+            <column caption='Score Agro' datatype='real' name='[score_agro]' role='measure' type='quantitative' />
+            <column-instance column='[Producao]' derivation='Sum' name='[sum:Producao:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Producao:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[sum:Producao:qk]' value='n#,##0,K;-#,##0,K' />
+            <format attr='text-format' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Producao:qk]' value='n#,##0,K;-#,##0,K' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Calculation_1950058692123176968:nk]' />
+              <text column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[sum:Producao:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]</rows>
+        <cols>[federated.1g6lxya0ezr4v413v97vv053j7ta].[sum:Producao:qk]</cols>
+      </table>
+      <simple-id uuid='{6B76EDB2-2919-43E9-83AE-9234F558B9FE}' />
+    </worksheet>
+    <worksheet name='Production_by_crop_year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='14'>Top 10 crops production (t)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (dataset_tableau)' name='federated.1g6lxya0ezr4v413v97vv053j7ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1g6lxya0ezr4v413v97vv053j7ta'>
+            <column caption='Ano1' datatype='integer' name='[Ano]' role='dimension' type='quantitative' />
+            <column caption='Cultura1' datatype='string' name='[Cultura]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Producao]' role='measure' type='quantitative' />
+            <column-instance column='[Producao]' derivation='Avg' name='[avg:Producao:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='None' name='[none:Ano:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cultura]' derivation='None' name='[none:Cultura:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Producao:qk]' included-values='in-range' />
+          <filter class='categorical' column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Producao])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;abacate&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;abobora&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;alface&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;anona&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;banana&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;batata&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;batata-doce&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;cana-de-acucar&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;cebola&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;cenoura&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;couve-repolho&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;feijao-verde&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;inhame&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;limao&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;maca&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;nabo&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;tangerina&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;tomate&quot;' />
+                  <groupfilter function='member' level='[none:Cultura:nk]' member='&quot;uva-vitis&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]</column>
+            <column>[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Producao:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Ano:qk]' scope='cols' value='Year' />
+            <encoding attr='space' class='0' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Ano:qk]' field-type='quantitative' max='2024' min='2019' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Producao:qk]' scope='rows' value='Production (t)' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]' value='Crop'>
+              <formatted-text>
+                <run>Crop</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Producao:qk]</rows>
+        <cols>[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Ano:qk]</cols>
+      </table>
+      <simple-id uuid='{B41C685B-9279-400B-82C1-BAFF866AC2FE}' />
+    </worksheet>
+    <worksheet name='Score_price_production'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Se eu plantar X na Madeira, vale a pena?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (dataset_tableau)' name='federated.1g6lxya0ezr4v413v97vv053j7ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1g6lxya0ezr4v413v97vv053j7ta'>
+            <column caption='fixed_score_agro' datatype='real' name='[Calculation_1950058692063109121]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([score_agro]) }' />
+            </column>
+            <column caption='fixed_price' datatype='real' name='[Calculation_1950058692064608258]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([Preco]) }' />
+            </column>
+            <column caption='fixed_production' datatype='real' name='[Calculation_1950058692066455555]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([Producao]) }' />
+            </column>
+            <column caption='Cultura1' datatype='string' name='[Cultura]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Preco]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Producao]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1950058692063109121]' derivation='Attribute' name='[attr:Calculation_1950058692063109121:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1950058692064608258]' derivation='Avg' name='[avg:Calculation_1950058692064608258:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1950058692066455555]' derivation='Avg' name='[avg:Calculation_1950058692066455555:qk]' pivot='key' type='quantitative' />
+            <column caption='Categoria' datatype='string' name='[categoria]' role='dimension' type='nominal' />
+            <column-instance column='[Cultura]' derivation='None' name='[none:Cultura:nk]' pivot='key' type='nominal' />
+            <column-instance column='[categoria]' derivation='None' name='[none:categoria:nk]' pivot='key' type='nominal' />
+            <column-instance column='[unidade]' derivation='None' name='[none:unidade:nk]' pivot='key' type='nominal' />
+            <column caption='Score Agro' datatype='real' name='[score_agro]' role='measure' type='quantitative' />
+            <column caption='Unidade' datatype='string' name='[unidade]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Calculation_1950058692064608258:qk]' scope='cols' value='Price (€/100Kg)' />
+            <format attr='title' class='0' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[attr:Calculation_1950058692063109121:qk]' scope='rows' value='Score' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:categoria:nk]' />
+              <size column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Calculation_1950058692066455555:qk]' />
+              <lod column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:unidade:nk]' />
+              <text column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='669' />
+                <format attr='maxwidth' value='669' />
+                <format attr='minheight' value='402' />
+                <format attr='maxheight' value='402' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1g6lxya0ezr4v413v97vv053j7ta].[attr:Calculation_1950058692063109121:qk]</rows>
+        <cols>[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Calculation_1950058692064608258:qk]</cols>
+      </table>
+      <simple-id uuid='{78DC6B8D-7D76-493F-AC0E-F63D7D799ABA}' />
+    </worksheet>
+    <worksheet name='Semaforo'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>The best products to plant are...</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (dataset_tableau)' name='federated.1g6lxya0ezr4v413v97vv053j7ta' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1g6lxya0ezr4v413v97vv053j7ta'>
+            <column caption='fixed_score_agro' datatype='real' name='[Calculation_1950058692063109121]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([score_agro]) }' />
+            </column>
+            <column caption='fixed_price' datatype='real' name='[Calculation_1950058692064608258]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([Preco]) }' />
+            </column>
+            <column caption='fixed_production' datatype='real' name='[Calculation_1950058692066455555]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Cultura] : AVG([Producao]) }' />
+            </column>
+            <column caption='max_fixed_price' datatype='real' name='[Calculation_1950058692118220804]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : MAX([Calculation_1950058692064608258]) }' />
+            </column>
+            <column caption='max_fixed_production' datatype='real' name='[Calculation_1950058692122103813]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : MAX([Calculation_1950058692066455555]) }' />
+            </column>
+            <column caption='max_fixed_price_production' datatype='real' name='[Calculation_1950058692122288134]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0.4 * [Calculation_1950058692063109121]&#13;&#10;+ 0.3 * ZN([Calculation_1950058692064608258])      / NULLIF([Calculation_1950058692118220804], 0)&#13;&#10;+ 0.3 * ZN([Calculation_1950058692066455555]) / NULLIF([Calculation_1950058692122103813], 0)' />
+            </column>
+            <column caption='semaforo' datatype='string' name='[Calculation_1950058692123176968]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_1950058692122288134] &gt;= 0.7 THEN &quot;Verde&quot;&#13;&#10;ELSEIF [Calculation_1950058692122288134] &gt;= 0.5 THEN &quot;Amarelo&quot;&#13;&#10;ELSE &quot;Vermelho&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Cultura1' datatype='string' name='[Cultura]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Preco]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Producao]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1950058692063109121]' derivation='Attribute' name='[attr:Calculation_1950058692063109121:qk]' pivot='key' type='quantitative' />
+            <column caption='Categoria' datatype='string' name='[categoria]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1950058692064608258]' derivation='Median' name='[med:Calculation_1950058692064608258:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1950058692123176968]' derivation='None' name='[none:Calculation_1950058692123176968:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cultura]' derivation='None' name='[none:Cultura:nk]' pivot='key' type='nominal' />
+            <column-instance column='[categoria]' derivation='None' name='[none:categoria:nk]' pivot='key' type='nominal' />
+            <column-instance column='[unidade]' derivation='None' name='[none:unidade:nk]' pivot='key' type='nominal' />
+            <column caption='Score Agro' datatype='real' name='[score_agro]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1950058692066455555]' derivation='Sum' name='[sum:Calculation_1950058692066455555:qk]' pivot='key' type='quantitative' />
+            <column caption='Unidade' datatype='string' name='[unidade]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Cultura])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Cultura:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:categoria:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:categoria:nk]' member='&quot;Batata de consumo&quot;' />
+              <groupfilter function='member' level='[none:categoria:nk]' member='&quot;Frutos&quot;' />
+              <groupfilter function='member' level='[none:categoria:nk]' member='&quot;Outros produtos vegetais&quot;' />
+              <groupfilter function='member' level='[none:categoria:nk]' member='&quot;Plantas Industriais&quot;' />
+              <groupfilter function='member' level='[none:categoria:nk]' member='&quot;Vegetais e Produtos Hortícolas&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]</column>
+            <column>[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:categoria:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[med:Calculation_1950058692064608258:qk]' scope='cols' value='Price (€/100 Kg)' />
+            <format attr='title' class='0' field='[federated.1g6lxya0ezr4v413v97vv053j7ta].[attr:Calculation_1950058692063109121:qk]' scope='rows' value='Score' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Calculation_1950058692123176968:nk]' />
+              <size column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[sum:Calculation_1950058692066455555:qk]' />
+              <lod column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:unidade:nk]' />
+              <text column='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='613' />
+                <format attr='maxwidth' value='613' />
+                <format attr='minheight' value='400' />
+                <format attr='maxheight' value='400' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1g6lxya0ezr4v413v97vv053j7ta].[attr:Calculation_1950058692063109121:qk]</rows>
+        <cols>[federated.1g6lxya0ezr4v413v97vv053j7ta].[med:Calculation_1950058692064608258:qk]</cols>
+      </table>
+      <simple-id uuid='{2B4EBE72-ED13-4197-9855-6540B79DCB32}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Painel 1'>
+      <style />
+      <size maxheight='1250' maxwidth='1100' minheight='1250' minwidth='1100' preset-index='11' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98720' id='25' param='horz' type-v2='layout-flow' w='98546' x='727' y='640'>
+            <zone h='98720' id='23' type-v2='layout-basic' w='98546' x='727' y='640'>
+              <zone h='68415' id='20' param='horz' type-v2='layout-flow' w='98546' x='727' y='640'>
+                <zone h='68415' id='14' type-v2='layout-basic' w='98546' x='727' y='640'>
+                  <zone h='57935' id='5' param='horz' type-v2='layout-flow' w='98546' x='727' y='11120'>
+                    <zone h='57935' id='3' type-v2='layout-basic' w='98546' x='727' y='11120'>
+                      <zone h='57935' id='35' is-fixed='true' type-v2='layout-basic' w='45364' x='53909' y='11120'>
+                        <zone h='32337' id='10' param='vert' type-v2='layout-flow' w='45364' x='53909' y='11120'>
+                          <zone fixed-size='325' h='26640' id='11' is-fixed='true' name='Area_by_crop' w='45364' x='53909' y='11120'>
+                            <layout-cache minwidth='200' type-h='fixed' type-w='scalable' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='5697' id='50' param='horz' type-v2='layout-flow' w='45364' x='53909' y='37760' />
+                        </zone>
+                        <zone h='25598' id='36' param='vert' type-v2='layout-flow' w='45364' x='53909' y='43457'>
+                          <zone h='25598' id='17' param='horz' type-v2='layout-flow' w='45364' x='53909' y='43457'>
+                            <zone h='25598' id='18' name='Planilha 10' w='45364' x='53909' y='43457'>
+                              <layout-cache minheight='188' minwidth='159' type-h='scalable' type-w='scalable' />
+                              <zone-style>
+                                <format attr='border-color' value='#000000' />
+                                <format attr='border-style' value='none' />
+                                <format attr='border-width' value='0' />
+                                <format attr='margin' value='4' />
+                              </zone-style>
+                            </zone>
+                          </zone>
+                        </zone>
+                      </zone>
+                      <zone h='21930' id='12' param='horz' type-v2='layout-flow' w='53182' x='727' y='47125'>
+                        <zone h='21930' id='13' name='Produce_avgPrice' w='53182' x='727' y='47125'>
+                          <layout-cache minwidth='200' type-h='fixed' type-w='scalable' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                      <zone h='32313' id='33' param='horz' type-v2='layout-flow' w='53182' x='727' y='11120'>
+                        <zone h='32313' id='48' name='Production_by_crop_year' w='53182' x='727' y='11120'>
+                          <layout-cache minwidth='159' type-h='fixed' type-w='scalable' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                      <zone h='3692' id='51' param='vert' type-v2='layout-flow' w='53182' x='727' y='43433' />
+                    </zone>
+                  </zone>
+                  <zone h='2996' id='9' type-v2='text' w='86363' x='727' y='640'>
+                    <formatted-text>
+                      <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='14'>Agricultural Viability Dashboard – Madeira</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='3280' id='45' param='horz' type-v2='layout-flow' w='98546' x='727' y='7840' />
+                  <zone h='4204' id='49' leg-item-order='reversed' name='Production_by_crop_year' pane-specification-id='0' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]' type-v2='color' w='98546' x='727' y='3636'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='26517' id='21' param='horz' type-v2='layout-flow' w='98546' x='727' y='72843'>
+                <zone fixed-size='44' h='26517' id='38' is-fixed='true' param='vert' type-v2='layout-flow' w='4000' x='727' y='72843' />
+                <zone fixed-size='952' h='26517' id='28' is-fixed='true' name='Semaforo' w='87272' x='4727' y='72843'>
+                  <layout-cache has-max-size-w='true' maxwidth='668' minwidth='668' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='3788' id='32' param='horz' type-v2='layout-flow' w='98546' x='727' y='69055' />
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='47' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98118' id='46' param='vert' type-v2='layout-flow' w='98546' x='727' y='941'>
+                <zone h='5129' id='9' type-v2='text' w='98546' x='727' y='941'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='14'>Agricultural Viability Dashboard – Madeira</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='228' h='27783' id='11' is-fixed='true' name='Area_by_crop' w='45091' x='54182' y='9882'>
+                  <layout-cache minwidth='200' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='225' h='27394' id='18' is-fixed='true' name='Planilha 10' w='45091' x='54182' y='41547'>
+                  <layout-cache minheight='188' minwidth='159' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='207' h='25327' id='13' is-fixed='true' name='Produce_avgPrice' w='50546' x='727' y='43614'>
+                  <layout-cache minwidth='200' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='216' h='26353' id='28' is-fixed='true' name='Semaforo' w='87272' x='4727' y='72706'>
+                  <layout-cache has-max-size-w='true' maxwidth='668' minwidth='668' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{16E6F8DB-720B-45B5-B8E3-20F9CC8B44A7}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Painel 2'>
+      <style />
+      <size maxheight='1360' maxwidth='1120' minheight='1360' minwidth='1120' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Sheet1 (dataset_tableau)' name='federated.1g6lxya0ezr4v413v97vv053j7ta' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1g6lxya0ezr4v413v97vv053j7ta'>
+        <column caption='Cultura1' datatype='string' name='[Cultura]' role='dimension' type='nominal' />
+        <column caption='Categoria' datatype='string' name='[categoria]' role='dimension' type='nominal' />
+        <column-instance column='[Cultura]' derivation='None' name='[none:Cultura:nk]' pivot='key' type='nominal' />
+        <column-instance column='[categoria]' derivation='None' name='[none:categoria:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='24397' id='17' name='Production_by_crop_year' w='38304' x='1161' y='20862' />
+        <zone h='10893' id='18' leg-item-layout='grid' name='Production_by_crop_year' pane-specification-id='0' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]' type-v2='color' w='21429' x='1875' y='6786' />
+        <zone h='28793' id='19' name='Area_by_crop' w='48214' x='43482' y='18190' />
+        <zone h='10776' id='20' name='Area_by_crop' pane-specification-id='6' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Preco:qk]' type-v2='size' w='12500' x='46696' y='5172' />
+        <zone h='10357' id='21' name='Area_by_crop' pane-specification-id='6' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Calculation_1950058692123176968:nk]' type-v2='color' w='12500' x='30804' y='5536' />
+        <zone h='32574' id='22' name='Production_by_crop' w='41429' x='2054' y='45074' />
+        <zone h='28162' id='23' name='Produce_avgPrice' w='43304' x='46071' y='47426' />
+        <zone h='16765' id='24' name='Semaforo' w='53750' x='2321' y='79338' />
+        <zone h='11838' id='25' name='Semaforo' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:categoria:nk]' type-v2='filter' w='14286' x='57500' y='78162' />
+        <zone h='39926' id='26' name='Semaforo' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]' type-v2='filter' w='14286' x='74643' y='78088' />
+        <zone h='8456' id='27' name='Semaforo' pane-specification-id='0' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[sum:Calculation_1950058692066455555:qk]' type-v2='size' w='12500' x='57857' y='90000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='15' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F3D539E2-DE54-4ABC-8BEA-063FEFBB1412}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Production_by_category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='2' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:categoria:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3833B1C9-C9F1-4B20-B1D7-E2263AD2FA00}' />
+    </window>
+    <window class='worksheet' name='Production_by_crop_year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{377FE61E-EB8C-42BD-A22B-24E27FDC5217}' />
+    </window>
+    <window class='worksheet' name='Area_by_crop'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='6' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Preco:qk]' type='size' />
+            <card pane-specification-id='6' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Calculation_1950058692123176968:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{01E10859-77E2-4347-AE56-FD7AD65C358D}' />
+    </window>
+    <window class='worksheet' name='Production_by_crop'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Calculation_1950058692123176968:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DE9B543F-4EAA-49DC-A495-0395F2F4D177}' />
+    </window>
+    <window class='worksheet' name='AvgPrice_vs_AvgProduction'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='1' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Calculation_1950058692123176968:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{961E7127-75F1-4449-8956-16E1E5E51AC9}' />
+    </window>
+    <window class='worksheet' name='Planilha 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='6' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Ano:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{955F4861-3CF7-431C-943B-82D9FD826A3A}' />
+    </window>
+    <window class='worksheet' name='Produce_avgPrice'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Calculation_1950058692123176968:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{44C186C3-82D4-456A-B075-C4680C6ADF01}' />
+    </window>
+    <window class='worksheet' name='Score_price_production'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='146'>
+            <card pane-specification-id='1' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:categoria:nk]' type='color' />
+            <card pane-specification-id='1' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[avg:Calculation_1950058692066455555:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{71F7057D-F8C9-4B76-8220-C24ABFA9A4C9}' />
+    </window>
+    <window class='worksheet' name='Semaforo'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:categoria:nk]' type='filter' />
+            <card param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[sum:Calculation_1950058692066455555:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Calculation_1950058692123176968:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3296FBEA-E68E-4ABF-B156-C5F01D469B6B}' />
+    </window>
+    <window class='worksheet' name='Planilha 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='153'>
+            <card pane-specification-id='0' param='[federated.1g6lxya0ezr4v413v97vv053j7ta].[none:Cultura:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A2B81D69-C33E-4037-B3F0-484F645ED40F}' />
+    </window>
+    <window class='worksheet' name='Planilha 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4DFFA586-3E47-493C-B532-2E4B236362B7}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Painel 1'>
+      <viewpoints>
+        <viewpoint name='Area_by_crop' />
+        <viewpoint name='Planilha 10'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Produce_avgPrice' />
+        <viewpoint name='Production_by_crop_year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Semaforo'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='52' />
+      <simple-id uuid='{9E0201C3-805A-4E4B-B1D9-E8D731BA89F5}' />
+    </window>
+    <window class='dashboard' name='Painel 2'>
+      <viewpoints>
+        <viewpoint name='Area_by_crop' />
+        <viewpoint name='Produce_avgPrice' />
+        <viewpoint name='Production_by_crop' />
+        <viewpoint name='Production_by_crop_year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Semaforo'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='26' />
+      <simple-id uuid='{857C7A0F-1BB4-4FC8-B876-2CC0A3CBBB3F}' />
+    </window>
+  </windows>
+</workbook>
