@@ -7,9 +7,7 @@ st.set_page_config(page_title="Madeira Crop & Funding Advisor", layout="wide")
 # ===== Carregar dados =====
 @st.cache_data
 def load_data():
-    df = pd.read_excel(
-        r"C:\Users\sofia\Documents\Data_Analytics_Ironhack\Projects\ironhack_final_project\Worked_datasets\dataset_tableau.xlsx"
-    )
+    df = pd.read_excel("Worked_datasets/dataset_tableau.xlsx")
     return df
 
 df = load_data()
