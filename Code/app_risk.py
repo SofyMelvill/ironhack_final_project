@@ -12,7 +12,7 @@ def load_data():
 
 df = load_data()
 
-with open("pepac.json", "r", encoding="utf-8") as f:
+with open("Code/pepac.json", "r", encoding="utf-8") as f:
     pepac = json.load(f)
 
 # ===== Funções =====
