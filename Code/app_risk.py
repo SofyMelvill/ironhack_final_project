@@ -148,6 +148,7 @@ st.header("2️⃣ Economic viability")
 
 result_econ = None
 custo_default = 5000
+preco_medio, prod_media = 0, 0  # inicializar
 
 # --- Cultura existente ---
 if mode == "Select existing crop":
@@ -158,35 +159,29 @@ if mode == "Select existing crop":
         prod_media = dados_cultura["Producao"].mean()
         categoria = dados_cultura["categoria"].iloc[0]
 
-        # fallback para preço externo, se não houver preço interno
-        if (pd.isna(preco_medio) or preco_medio == 0) and cultura in df_ref_prices["Produto"].values:
-            preco_medio = df_ref_prices.loc[df_ref_prices["Produto"] == cultura, "Preco"].mean()
-            st.caption(f"💡 Using external reference price for {cultura}: {preco_medio:.2f} €/100kg")
+        # fallback externo
+        preco_medio = get_price(cultura, preco_medio, df_ref_prices)
 
         custo_medio_categoria = {
             "Vegetais e Produtos Hortícolas": 3400,
             "Frutos": 10500
         }
         custo_default = custo_medio_categoria.get(categoria, 5000)
-
     else:
-        preco_medio, prod_media, categoria = 0, 0, None
+        st.error("❌ No economic data available for this crop")
 
 # --- Cultura nova ---
 else:
     df_cat = df[df["categoria"] == categoria_new]
 
     if df_cat.empty:
-        preco_medio, prod_media = 0, 0
         st.error(f"No reference data available for category: {categoria_new}")
     else:
         preco_medio = df_cat["Preco"].mean()
         prod_media = df_cat["Producao"].mean()
 
-    # fallback externo (se houver correspondência por categoria/cultura)
-    if (pd.isna(preco_medio) or preco_medio == 0) and cultura in df_ref_prices["Produto"].values:
-        preco_medio = df_ref_prices.loc[df_ref_prices["Produto"] == cultura, "Preco"].mean()
-        st.caption(f"💡 Using external reference price for {cultura}: {preco_medio:.2f} €/100kg")
+        # fallback externo (se houver registo por cultura)
+        preco_medio = get_price(cultura, preco_medio, df_ref_prices)
 
     custo_medio_categoria = {
         "Vegetais e Produtos Hortícolas": 3400,
