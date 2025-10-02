@@ -188,6 +188,7 @@ st.header("2️⃣ Economic viability")
 result_econ = None
 custo_default = 5000
 preco_medio, prod_media = 0, 0  # inicializar
+price_source = None
 
 # --- Cultura existente ---
 if mode == "Select existing crop":
@@ -215,15 +216,11 @@ else:
     df_cat = df[df["categoria"] == categoria_new]
 
     if df_cat.empty:
-        st.error(f"No reference data available for category: {categoria_new}")
-    else:
         preco_medio = df_cat["Preco"].mean()
         prod_media = df_cat["Producao"].mean()
 
     # fallback externo (cultura ou categoria)
     preco_medio, price_source = get_price(cultura, categoria_new, preco_medio, df_ref_prices)
-
-
 
 
     custo_medio_categoria = {
@@ -260,6 +257,7 @@ if preco_medio > 0 and score_agro is not None:
         st.metric("Production", f"{prod_media:.0f} kg/ha")
         st.metric("Adjusted Revenue (with climate risk)", f"{receita_ajustada:,.0f} €")
         st.metric("Estimated Profit", f"{lucro:,.0f} €")
+        st.caption(f"*Default cost: {custo_default} €/ha*")
 
         # Avaliação final
         if score_agro >= 0.75 and lucro > 0:
