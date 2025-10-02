@@ -221,7 +221,10 @@ else:
         prod_media = df_cat["Producao"].mean()
 
     # fallback externo (cultura ou categoria)
-    preco_medio = get_price(cultura, categoria_new, preco_medio, df_ref_prices)
+    preco_medio, price_source = get_price(cultura, categoria_new, preco_medio, df_ref_prices)
+
+
+
 
     custo_medio_categoria = {
         "Vegetais e Produtos Hortícolas": 3400,
@@ -340,6 +343,7 @@ if score_agro is not None:
             st.caption("💡 Economic analysis based on *external reference prices (MARL) by category*.")
         else:
             st.caption("⚠️ Economic analysis based on *category averages (Madeira dataset)*.")
+
 
 
 else:
