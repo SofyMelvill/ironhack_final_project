@@ -74,14 +74,30 @@ def auto_recommend(cultura, df, pepac, categoria_override=None):
     return [(c, pepac[c]) for c in codes if c in pepac]
 
 
-def get_price(cultura, preco_medio, df_ref_prices):
-    """Devolve preço médio. Usa fallback do dataset externo se não houver preço interno."""
+def get_price(cultura, categoria, preco_medio, df_ref_prices):
+    """
+    Devolve preço médio.
+    - Se já existir preco_medio válido, devolve.
+    - Caso contrário tenta encontrar por cultura no dataset externo.
+    - Se também não existir, tenta por categoria no dataset externo.
+    """
     if pd.isna(preco_medio) or preco_medio == 0:
+        # 1. Procurar por cultura
         row_ref = df_ref_prices[df_ref_prices["Produto"] == cultura]
         if not row_ref.empty:
             preco_medio = row_ref["Preco"].mean()
             st.caption(f"💡 Using external reference price for {cultura}: {preco_medio:.2f} €/100kg")
+            return preco_medio
+
+        # 2. Procurar por categoria
+        row_ref = df_ref_prices[df_ref_prices["categoria"] == categoria]
+        if not row_ref.empty:
+            preco_medio = row_ref["Preco"].mean()
+            st.caption(f"💡 Using external reference price for category {categoria}: {preco_medio:.2f} €/100kg")
+            return preco_medio
+
     return preco_medio
+
 
 # ===== UI =====
 
@@ -132,8 +148,24 @@ if area < 0.25:
 # ==========================
 st.header("1️⃣ Agronomic viability")
 
-result_agro = None  # <-- variável para guardar o resultado
+result_agro = None  # variável para guardar o resultado
 
+if mode == "Select existing crop":
+    dados_cultura = df[df["Cultura"] == cultura]
+
+    if not dados_cultura.empty:
+        score_agro = dados_cultura["score_agro"].mean()
+    else:
+        score_agro = None
+        st.error(f"❌ No agronomic reference data available for {cultura}")
+
+else:  # Add new crop
+    if cultura:  # só calcula se o utilizador escreveu o nome
+        score_agro = estimate_score(ph_min, ph_max, sol_min, df)
+    else:
+        score_agro = None
+
+# --- Mostrar resultado ---
 if score_agro is not None:
     st.metric("Agronomic Score", f"{score_agro:.2f}")
     if score_agro >= 0.75:
@@ -149,6 +181,8 @@ else:
     if mode == "Add new crop" and cultura:
         result_agro = "❌ Agronomically not viable in Madeira conditions"
         st.error(result_agro)
+    elif mode == "Select existing crop":
+        st.warning("⚠️ No agronomic data available for this crop")
 
 # ==========================
 # Passo 2: Economic viability
@@ -168,8 +202,8 @@ if mode == "Select existing crop":
         prod_media = dados_cultura["Producao"].mean()
         categoria = dados_cultura["categoria"].iloc[0]
 
-        # fallback externo
-        preco_medio = get_price(cultura, preco_medio, df_ref_prices)
+        # fallback externo por cultura ou categoria
+        preco_medio = get_price(cultura, categoria, preco_medio, df_ref_prices)
 
         custo_medio_categoria = {
             "Vegetais e Produtos Hortícolas": 3400,
@@ -189,8 +223,8 @@ else:
         preco_medio = df_cat["Preco"].mean()
         prod_media = df_cat["Producao"].mean()
 
-        # fallback externo (se houver registo por cultura)
-        preco_medio = get_price(cultura, preco_medio, df_ref_prices)
+    # fallback externo (cultura ou categoria)
+    preco_medio = get_price(cultura, categoria_new, preco_medio, df_ref_prices)
 
     custo_medio_categoria = {
         "Vegetais e Produtos Hortícolas": 3400,
@@ -220,6 +254,7 @@ if preco_medio > 0 and prod_media > 0 and score_agro is not None:
     st.metric("Estimated Profit", f"{lucro:,.0f} €")
     st.caption(f"*Default cost: {custo_default} €/ha*")
 
+    # Avaliação final
     if score_agro >= 0.75 and lucro > 0:
         result_econ = "✅ High viability: recommended"
         st.success(result_econ)
