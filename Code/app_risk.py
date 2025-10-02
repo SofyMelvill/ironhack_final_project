@@ -240,30 +240,39 @@ custos = st.number_input(
 )
 
 # --- Cálculo económico ---
-if preco_medio > 0 and prod_media > 0 and score_agro is not None:
-    receita_bruta = preco_medio * prod_media * area / 100
-    receita_ajustada = receita_bruta * score_agro
-    custo_total = custos * area
-    lucro = receita_ajustada - custo_total
+if preco_medio > 0 and score_agro is not None:
+    if prod_media == 0 or pd.isna(prod_media):
+        prod_media = st.number_input(
+            "Expected production (kg/ha)", 
+            min_value=100.0, max_value=50000.0, step=50.0,
+            help="Enter the estimated yield if no reference data is available"
+        )
 
-    st.subheader(f"📊 Results for {cultura}")
-    st.metric("Agronomic Score", f"{score_agro:.2f}")
-    st.metric("Average Price", f"{preco_medio:.2f} €/100kg")
-    st.metric("Average Production", f"{prod_media:.0f} kg/ha")
-    st.metric("Adjusted Revenue (with climate risk)", f"{receita_ajustada:,.0f} €")
-    st.metric("Estimated Profit", f"{lucro:,.0f} €")
-    st.caption(f"*Default cost: {custo_default} €/ha*")
+    if prod_media > 0:
+        receita_bruta = preco_medio * prod_media * area / 100
+        receita_ajustada = receita_bruta * score_agro
+        custo_total = custos * area
+        lucro = receita_ajustada - custo_total
 
-    # Avaliação final
-    if score_agro >= 0.75 and lucro > 0:
-        result_econ = "✅ High viability: recommended"
-        st.success(result_econ)
-    elif score_agro >= 0.5 and lucro > 0:
-        result_econ = "⚠️ Medium viability: possible risk (climate/economic)"
-        st.warning(result_econ)
+        st.subheader(f"📊 Results for {cultura}")
+        st.metric("Agronomic Score", f"{score_agro:.2f}")
+        st.metric("Average Price", f"{preco_medio:.2f} €/100kg")
+        st.metric("Production", f"{prod_media:.0f} kg/ha")
+        st.metric("Adjusted Revenue (with climate risk)", f"{receita_ajustada:,.0f} €")
+        st.metric("Estimated Profit", f"{lucro:,.0f} €")
+
+        # Avaliação final
+        if score_agro >= 0.75 and lucro > 0:
+            result_econ = "✅ High viability: recommended"
+            st.success(result_econ)
+        elif score_agro >= 0.5 and lucro > 0:
+            result_econ = "⚠️ Medium viability: possible risk (climate/economic)"
+            st.warning(result_econ)
+        else:
+            result_econ = "❌ Low viability: high risk (climate or economic loss)"
+            st.error(result_econ)
     else:
-        result_econ = "❌ Low viability: high risk (climate or economic loss)"
-        st.error(result_econ)
+        st.error("❌ No production data available to assess viability")
 else:
     result_econ = "❌ No economic data available to assess viability"
     st.error(result_econ)
