@@ -76,27 +76,23 @@ def auto_recommend(cultura, df, pepac, categoria_override=None):
 
 def get_price(cultura, categoria, preco_medio, df_ref_prices):
     """
-    Devolve preço médio.
-    - Se já existir preco_medio válido, devolve.
-    - Caso contrário tenta encontrar por cultura no dataset externo.
-    - Se também não existir, tenta por categoria no dataset externo.
+    Devolve preço médio + fonte usada (internal/external-crop/external-category).
     """
+    source = "internal"
     if pd.isna(preco_medio) or preco_medio == 0:
-        # 1. Procurar por cultura
         row_ref = df_ref_prices[df_ref_prices["Produto"] == cultura]
         if not row_ref.empty:
             preco_medio = row_ref["Preco"].mean()
-            st.caption(f"💡 Using external reference price for {cultura}: {preco_medio:.2f} €/100kg")
-            return preco_medio
+            source = "external-crop"
+            return preco_medio, source
 
-        # 2. Procurar por categoria
         row_ref = df_ref_prices[df_ref_prices["categoria"] == categoria]
         if not row_ref.empty:
             preco_medio = row_ref["Preco"].mean()
-            st.caption(f"💡 Using external reference price for category {categoria}: {preco_medio:.2f} €/100kg")
-            return preco_medio
+            source = "external-category"
+            return preco_medio, source
 
-    return preco_medio
+    return preco_medio, source
 
 
 # ===== UI =====
@@ -203,7 +199,8 @@ if mode == "Select existing crop":
         categoria = dados_cultura["categoria"].iloc[0]
 
         # fallback externo por cultura ou categoria
-        preco_medio = get_price(cultura, categoria, preco_medio, df_ref_prices)
+        preco_medio, price_source = get_price(cultura, categoria, preco_medio, df_ref_prices)
+
 
         custo_medio_categoria = {
             "Vegetais e Produtos Hortícolas": 3400,
@@ -337,10 +334,13 @@ if score_agro is not None:
 
     # 🔹 Indicar a fonte do preço
     if mode == "Add new crop":
-        if not row_ref.empty:
-            st.caption("💡 Economic analysis based on *external reference prices (MARL)*.")
+        if price_source == "external-crop":
+            st.caption("💡 Economic analysis based on *external reference prices (MARL) by crop*.")
+        elif price_source == "external-category":
+            st.caption("💡 Economic analysis based on *external reference prices (MARL) by category*.")
         else:
             st.caption("⚠️ Economic analysis based on *category averages (Madeira dataset)*.")
+
 
 else:
     st.warning("⚠️ No agronomic data available for this crop. Cannot calculate final recommendation.")
