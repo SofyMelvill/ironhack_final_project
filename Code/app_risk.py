@@ -94,6 +94,7 @@ else:  # Add new crop
         "Water needs",
         [(1,"Low"), (2, "Normal"), (3,"High"), "Unknown"],
         format_func=lambda x: x[1]
+    )
     solo = st.selectbox(
         "Soil type",
         [(1,"Sandy"), (2, "Loamy"), (3,"Clay"), "Unknown"]
