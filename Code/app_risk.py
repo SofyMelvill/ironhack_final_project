@@ -74,6 +74,8 @@ st.markdown("Decision pipeline: **Agronomy → Economy → Funding**")
 st.header("🔹 Input data")
 mode = st.radio("Input type:", ["Select existing crop", "Add new crop"])
 
+categoria_new = None 
+
 if mode == "Select existing crop":
     cultura = st.selectbox("Choose crop:", sorted(df["Cultura"].unique()))
     dados_cultura = df[df["Cultura"] == cultura]
@@ -92,6 +94,9 @@ else:  # Add new crop
         "Water needs",
         [(1,"Low"), (2, "Normal"), (3,"High"), "Unknown"],
         format_func=lambda x: x[1]
+    solo = st.selectbox(
+        "Soil type",
+        [(1,"Sandy"), (2, "Loamy"), (3,"Clay"), "Unknown"]
     )
     score_agro = estimate_score(ph_min, ph_max, sol_min, df) if cultura else None
 
