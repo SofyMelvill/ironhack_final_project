@@ -137,103 +137,84 @@ else:
 st.header("2️⃣ Economic viability")
 
 result_econ = None  # <-- variável para guardar o resultado
+custo_default = 5000  # fallback
 
-if score_agro is None:
-    # Não há score → não dá para calcular nada
-    result_econ = "❌ No economic data available to assess viability"
-    st.error(result_econ)
+# --- Cultura existente ---
+if mode == "Select existing crop":
+    dados_cultura = df[df["Cultura"] == cultura]
 
-else:
-    if mode == "Select existing crop":
-        # ----- Cultura já existente -----
-        dados_cultura = df[df["Cultura"] == cultura]
-        if not dados_cultura.empty:
-            preco_medio = dados_cultura["Preco"].mean()
-            prod_media = dados_cultura["Producao"].mean()
-            categoria = dados_cultura["categoria"].iloc[0]
+    if not dados_cultura.empty:
+        preco_medio = dados_cultura["Preco"].mean()
+        prod_media = dados_cultura["Producao"].mean()
+        categoria = dados_cultura["categoria"].iloc[0]
 
-            # Custos médios por categoria
-            custo_medio_categoria = {
-                "Vegetais e Produtos Hortícolas": 3400,
-                "Frutos": 10500
-            }
-            custo_default = custo_medio_categoria.get(categoria, 5000)
-
-            custos = st.number_input(
-                "Operational costs per hectare (€)",
-                min_value=100.0, max_value=50000.0, step=100.0,
-                value=float(custo_default),
-                key="custos_existing" if mode == "Select existing crop" else "custos_new"
-            )
-
-            # Receita e lucro
-            receita_bruta = preco_medio * prod_media * area / 100
-            receita_ajustada = receita_bruta * score_agro
-            custo_total = custos * area
-            lucro = receita_ajustada - custo_total
-
-            st.subheader(f"📊 Results for {cultura}")
-            st.metric("Agronomic Score", f"{score_agro:.2f}")
-            st.metric("Average Price", f"{preco_medio:.2f} €/100kg")
-            st.metric("Average Production", f"{prod_media:.0f} kg/ha")
-            st.metric("Adjusted Revenue (with climate risk)", f"{receita_ajustada:,.0f} €")
-            st.metric("Estimated Profit", f"{lucro:,.0f} €")
-            st.caption(f"*Default cost for {categoria}: {custo_default} €/ha*")
-
-        else:
-            result_econ = "❌ No economic data available to assess viability"
-            st.error(result_econ)
+        # Custos médios por categoria
+        custo_medio_categoria = {
+            "Vegetais e Produtos Hortícolas": 3400,
+            "Frutos": 10500
+        }
+        custo_default = custo_medio_categoria.get(categoria, 5000)
 
     else:
-    # ----- Cultura nova -----
-        df_cat = df[df["categoria"] == categoria_new]
+        preco_medio, prod_media, categoria = 0, 0, None
 
-        if df_cat.empty:
-            st.error(f"No reference data available for category: {categoria_new}")
-            preco_medio, prod_media = 0, 0
-        else:
-            preco_medio = df_cat["Preco"].mean()
-            prod_media = df_cat["Producao"].mean()
+# --- Cultura nova ---
+else:  # Add new crop
+    df_cat = df[df["categoria"] == categoria_new]
 
-        custo_medio_categoria = {
+    if df_cat.empty:
+        preco_medio, prod_media = 0, 0
+        st.error(f"No reference data available for category: {categoria_new}")
+    else:
+        preco_medio = df_cat["Preco"].mean()
+        prod_media = df_cat["Producao"].mean()
+
+    custo_medio_categoria = {
         "Vegetais e Produtos Hortícolas": 3400,
         "Frutos": 10500
-        }
+    }
     custo_default = custo_medio_categoria.get(categoria_new, 5000)
 
-    custos = st.number_input(
-        "Operational costs per hectare (€)",
-        min_value=100.0, max_value=50000.0, step=100.0,
-        value=float(custo_default)
-    )
+# --- Input único de custos ---
+custos = st.number_input(
+    "Operational costs per hectare (€)",
+    min_value=100.0, max_value=50000.0, step=100.0,
+    value=float(custo_default)
+)
 
-    if preco_medio > 0 and prod_media > 0:
-        receita_bruta = preco_medio * prod_media * area / 100
-        receita_ajustada = receita_bruta * score_agro
-        custo_total = custos * area
-        lucro = receita_ajustada - custo_total
+# --- Cálculos económicos ---
+if preco_medio > 0 and prod_media > 0 and score_agro is not None:
+    receita_bruta = preco_medio * prod_media * area / 100
+    receita_ajustada = receita_bruta * score_agro
+    custo_total = custos * area
+    lucro = receita_ajustada - custo_total
 
-        st.subheader(f"📊 Results for {cultura} (new crop)")
-        st.metric("Estimated Price (avg by category)", f"{preco_medio:.2f} €/100kg")
-        st.metric("Estimated Production (avg by category)", f"{prod_media:.0f} kg/ha")
-        st.metric("Adjusted Revenue", f"{receita_ajustada:,.0f} €")
-        st.metric("Estimated Profit", f"{lucro:,.0f} €")
-        st.caption(f"*Default cost for {categoria_new}: {custo_default} €/ha*")
-
-        if score_agro >= 0.75 and lucro > 0:
-            result_econ = "✅ High viability: recommended"
-            st.success(result_econ)
-        elif score_agro >= 0.5 and lucro > 0:
-            result_econ = "⚠️ Medium viability: possible risk (climate/economic)"
-            st.warning(result_econ)
-        else:
-            result_econ = "❌ Low viability: high risk (climate or economic loss)"
-            st.error(result_econ)
+    if mode == "Select existing crop":
+        st.subheader(f"📊 Results for {cultura}")
     else:
-        result_econ = "❌ No economic reference data available for this new crop"
+        st.subheader(f"📊 Results for {cultura} (new crop)")
+
+    st.metric("Agronomic Score", f"{score_agro:.2f}")
+    st.metric("Average Price", f"{preco_medio:.2f} €/100kg")
+    st.metric("Average Production", f"{prod_media:.0f} kg/ha")
+    st.metric("Adjusted Revenue (with climate risk)", f"{receita_ajustada:,.0f} €")
+    st.metric("Estimated Profit", f"{lucro:,.0f} €")
+    st.caption(f"*Default cost: {custo_default} €/ha*")
+
+    # Avaliação de viabilidade
+    if score_agro >= 0.75 and lucro > 0:
+        result_econ = "✅ High viability: recommended"
+        st.success(result_econ)
+    elif score_agro >= 0.5 and lucro > 0:
+        result_econ = "⚠️ Medium viability: possible risk (climate/economic)"
+        st.warning(result_econ)
+    else:
+        result_econ = "❌ Low viability: high risk (climate or economic loss)"
         st.error(result_econ)
 
-
+else:
+    result_econ = "❌ No economic data available to assess viability"
+    st.error(result_econ)
 
 
 # ==========================
