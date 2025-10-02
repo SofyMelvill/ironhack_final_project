@@ -162,7 +162,8 @@ else:
             custos = st.number_input(
                 "Operational costs per hectare (€)",
                 min_value=100.0, max_value=50000.0, step=100.0,
-                value=float(custo_default)
+                value=float(custo_default),
+                key="custos_existing" if mode == "Select existing crop" else "custos_new"
             )
 
             # Receita e lucro
