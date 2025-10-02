@@ -19,7 +19,7 @@ with open("Code/pepac.json", "r", encoding="utf-8") as f:
 def load_ref_prices():
     df_ref = pd.read_excel("Datasets/Abastecedores_2025-10-01_2025-10-01.xlsx")
     df_ref["Espécie_norm"] = df_ref["Espécie"].str.strip().str.lower()
-    df_ref["Preco_ref"] = df_ref["€/100kg"]
+    df_ref["Preco_ref"] = df_ref["Preco"]
     return df_ref
 
 df_ref_prices = load_ref_prices()
