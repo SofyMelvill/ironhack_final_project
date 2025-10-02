@@ -15,6 +15,15 @@ df = load_data()
 with open("Code/pepac.json", "r", encoding="utf-8") as f:
     pepac = json.load(f)
 
+
+def load_ref_prices():
+    df_ref = pd.read_excel("Datasets/Abastecedores_2025-10-01_2025-10-01.xlsx")
+    df_ref["Espécie_norm"] = df_ref["Espécie"].str.strip().str.lower()
+    df_ref["Preco_ref"] = df_ref["€/100kg"]
+    return df_ref
+
+df_ref_prices = load_ref_prices()
+
 # ===== Funções =====
 def recommend_lines(age, start, modernize, transform, collective,
                     access, calamity, landscape, insurance, pepac):
@@ -93,11 +102,12 @@ else:  # Add new crop
     necessidade_hidrica = st.selectbox(
         "Water needs",
         [(1,"Low"), (2, "Normal"), (3,"High"), "Unknown"],
-        format_func=lambda x: x[1]
+        format_func=lambda x: x[1] if isinstance(x, tuple) else x
     )
     solo = st.selectbox(
         "Soil type",
-        [(1,"Sandy"), (2, "Loamy"), (3,"Clay"), "Unknown"]
+        [(1,"Sandy"), (2, "Loamy"), (3,"Clay"), "Unknown"],
+        format_func=lambda x: x[1] if isinstance(x, tuple) else x
     )
     score_agro = estimate_score(ph_min, ph_max, sol_min, df) if cultura else None
 
@@ -159,15 +169,27 @@ if mode == "Select existing crop":
         preco_medio, prod_media, categoria = 0, 0, None
 
 # --- Cultura nova ---
-else:  # Add new crop
-    df_cat = df[df["categoria"] == categoria_new]
+else:  
+    # 🔹 Primeiro tenta usar dataset externo
+    row_ref = df_ref_prices[df_ref_prices["Espécie_norm"] == cultura.lower().strip()] if cultura else pd.DataFrame()
 
-    if df_cat.empty:
-        preco_medio, prod_media = 0, 0
-        st.error(f"No reference data available for category: {categoria_new}")
+    if not row_ref.empty:
+        preco_medio = row_ref["Preco_ref"].mean()
+        st.caption(f"💡 Using external reference price for {cultura}: {preco_medio:.2f} €/100kg")
     else:
-        preco_medio = df_cat["Preco"].mean()
-        prod_media = df_cat["Producao"].mean()
+        # fallback = média da categoria do dataset Madeira
+        df_cat = df[df["categoria"] == categoria_new]
+        if df_cat.empty:
+            preco_medio, prod_media = 0, 0
+            st.error(f"No reference data available for category: {categoria_new}")
+        else:
+            preco_medio = df_cat["Preco"].mean()
+            prod_media = df_cat["Producao"].mean()
+            st.caption(f"⚠️ No external price found, using category average: {preco_medio:.2f} €/100kg")
+
+    # Produção só dá para estimar pela categoria
+    df_cat = df[df["categoria"] == categoria_new]
+    prod_media = df_cat["Producao"].mean() if not df_cat.empty else 0
 
     custo_medio_categoria = {
         "Vegetais e Produtos Hortícolas": 3400,
@@ -282,10 +304,21 @@ if score_agro is not None:
 
     st.subheader("📝 Summary")
     st.info(final_sentence)
+
+    # 🔹 Indicar a fonte do preço
+    if mode == "Add new crop":
+        if not row_ref.empty:
+            st.caption("💡 Economic analysis based on *external reference prices (MARL)*.")
+        else:
+            st.caption("⚠️ Economic analysis based on *category averages (Madeira dataset)*.")
+
 else:
     st.warning("⚠️ No agronomic data available for this crop. Cannot calculate final recommendation.")
 
 
+# ==========================
+# Funding Summary
+# ==========================
 st.subheader("💶 Funding Summary")
     
 if auto_lines:
