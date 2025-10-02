@@ -146,8 +146,8 @@ else:
 # ==========================
 st.header("2️⃣ Economic viability")
 
-result_econ = None  # <-- variável para guardar o resultado
-custo_default = 5000  # fallback
+result_econ = None
+custo_default = 5000
 
 # --- Cultura existente ---
 if mode == "Select existing crop":
@@ -158,7 +158,11 @@ if mode == "Select existing crop":
         prod_media = dados_cultura["Producao"].mean()
         categoria = dados_cultura["categoria"].iloc[0]
 
-        # Custos médios por categoria
+        # fallback para preço externo, se não houver preço interno
+        if (pd.isna(preco_medio) or preco_medio == 0) and cultura in df_ref_prices["Produto"].values:
+            preco_medio = df_ref_prices.loc[df_ref_prices["Produto"] == cultura, "Preco"].mean()
+            st.caption(f"💡 Using external reference price for {cultura}: {preco_medio:.2f} €/100kg")
+
         custo_medio_categoria = {
             "Vegetais e Produtos Hortícolas": 3400,
             "Frutos": 10500
@@ -169,27 +173,20 @@ if mode == "Select existing crop":
         preco_medio, prod_media, categoria = 0, 0, None
 
 # --- Cultura nova ---
-else:  
-    # 🔹 Primeiro tenta usar dataset externo
-    row_ref = df_ref_prices[df_ref_prices["Espécie_norm"] == cultura.lower().strip()] if cultura else pd.DataFrame()
-
-    if not row_ref.empty:
-        preco_medio = row_ref["Preco_ref"].mean()
-        st.caption(f"💡 Using external reference price for {cultura}: {preco_medio:.2f} €/100kg")
-    else:
-        # fallback = média da categoria do dataset Madeira
-        df_cat = df[df["categoria"] == categoria_new]
-        if df_cat.empty:
-            preco_medio, prod_media = 0, 0
-            st.error(f"No reference data available for category: {categoria_new}")
-        else:
-            preco_medio = df_cat["Preco"].mean()
-            prod_media = df_cat["Producao"].mean()
-            st.caption(f"⚠️ No external price found, using category average: {preco_medio:.2f} €/100kg")
-
-    # Produção só dá para estimar pela categoria
+else:
     df_cat = df[df["categoria"] == categoria_new]
-    prod_media = df_cat["Producao"].mean() if not df_cat.empty else 0
+
+    if df_cat.empty:
+        preco_medio, prod_media = 0, 0
+        st.error(f"No reference data available for category: {categoria_new}")
+    else:
+        preco_medio = df_cat["Preco"].mean()
+        prod_media = df_cat["Producao"].mean()
+
+    # fallback externo (se houver correspondência por categoria/cultura)
+    if (pd.isna(preco_medio) or preco_medio == 0) and cultura in df_ref_prices["Produto"].values:
+        preco_medio = df_ref_prices.loc[df_ref_prices["Produto"] == cultura, "Preco"].mean()
+        st.caption(f"💡 Using external reference price for {cultura}: {preco_medio:.2f} €/100kg")
 
     custo_medio_categoria = {
         "Vegetais e Produtos Hortícolas": 3400,
@@ -204,18 +201,14 @@ custos = st.number_input(
     value=float(custo_default)
 )
 
-# --- Cálculos económicos ---
+# --- Cálculo económico ---
 if preco_medio > 0 and prod_media > 0 and score_agro is not None:
     receita_bruta = preco_medio * prod_media * area / 100
     receita_ajustada = receita_bruta * score_agro
     custo_total = custos * area
     lucro = receita_ajustada - custo_total
 
-    if mode == "Select existing crop":
-        st.subheader(f"📊 Results for {cultura}")
-    else:
-        st.subheader(f"📊 Results for {cultura} (new crop)")
-
+    st.subheader(f"📊 Results for {cultura}")
     st.metric("Agronomic Score", f"{score_agro:.2f}")
     st.metric("Average Price", f"{preco_medio:.2f} €/100kg")
     st.metric("Average Production", f"{prod_media:.0f} kg/ha")
@@ -223,7 +216,6 @@ if preco_medio > 0 and prod_media > 0 and score_agro is not None:
     st.metric("Estimated Profit", f"{lucro:,.0f} €")
     st.caption(f"*Default cost: {custo_default} €/ha*")
 
-    # Avaliação de viabilidade
     if score_agro >= 0.75 and lucro > 0:
         result_econ = "✅ High viability: recommended"
         st.success(result_econ)
@@ -233,7 +225,6 @@ if preco_medio > 0 and prod_media > 0 and score_agro is not None:
     else:
         result_econ = "❌ Low viability: high risk (climate or economic loss)"
         st.error(result_econ)
-
 else:
     result_econ = "❌ No economic data available to assess viability"
     st.error(result_econ)
