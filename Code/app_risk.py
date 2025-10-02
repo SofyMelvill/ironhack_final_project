@@ -74,6 +74,15 @@ def auto_recommend(cultura, df, pepac, categoria_override=None):
     return [(c, pepac[c]) for c in codes if c in pepac]
 
 
+def get_price(cultura, preco_medio, df_ref_prices):
+    """Devolve preço médio. Usa fallback do dataset externo se não houver preço interno."""
+    if pd.isna(preco_medio) or preco_medio == 0:
+        row_ref = df_ref_prices[df_ref_prices["Produto"] == cultura]
+        if not row_ref.empty:
+            preco_medio = row_ref["Preco"].mean()
+            st.caption(f"💡 Using external reference price for {cultura}: {preco_medio:.2f} €/100kg")
+    return preco_medio
+
 # ===== UI =====
 
 st.title("🌱 Crop Genie")
